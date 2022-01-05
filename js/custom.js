@@ -1,9 +1,34 @@
-let fr = loadMap("/lang/france.json", loader)
-let en = loadMap("/lang/english.json", loader)
+// load language files
+let fr = loadMap("/lang/france.json", loader);
+let en = loadMap("/lang/english.json", loader);
 
+// get current language
+var curLang = getLang();
+// manage handler nastily
+var received = 0;
+
+// build translation maps
 const translations = new Map().set('en', en).set('fr', fr);
 const flags = new Map().set('fr', 'english.jpg').set('en', 'france.jpg');
 
+// build sidenav on mobile
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
+
+// manually closing the sidenav
+function closeSidenav() {
+    $('.sidenav').sidenav().style.width = '0px';
+}
+
+// used to automatically close sidenav on translate
+function translateContentAndQuit() {
+    translateContent();
+    // it's not that "pretty"
+    // closeSidenav();
+}
+
+// retrieve current languages from GET, or define it to english as it will be translated once on loading
 function getLang() {
     var tmp = getParameter('lang');
     if (tmp == null) {
@@ -13,14 +38,13 @@ function getLang() {
     }
 }
 
-var curLang = getLang()
-var received = 0;
-
+// switch language
 function changeLang(lang) {
     return (lang === 'en') ? 'fr': 'en';
 }
 
-function translate() {
+// translate the content of the actual page, using placeholders
+function translateContent() {
     const flagsToTranslate = document.querySelectorAll('[img-translate]');
     const elementsToTranslate = document.querySelectorAll('[data-translate]');
 
@@ -44,6 +68,8 @@ function translate() {
     }
 }
 
+// load a configuration map from a JSON file
+// use a cb to reload page after file was loaded
 function loadMap(file, cb) {
     var map = new Map()
     $.getJSON(file, function(json) {
@@ -54,13 +80,15 @@ function loadMap(file, cb) {
     return map;
 }
 
+// small wrapper to force reload on content loading
 function loader() {
     received++;
     if (received >= 2) {
-        translate()
+        translateContent()
     }
 }
 
+// retrieve a GET parameter
 function getParameter(key) {
     address = window.location.search
     parameterList = new URLSearchParams(address)

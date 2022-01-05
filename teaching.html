@@ -22,19 +22,28 @@
                 <nav class="nav-extended green lighten-2">
                     <div class="nav-wrapper">
                         <div class="container">
-                            <span class="hide-on-med-and-down" style="font-size:xx-large">Bruno FERRES&nbsp;&nbsp;&nbsp;&nbsp;</span><span data-translate id="myJob" class="hide-on-med-and-down"></span>
-                            <ul class="right">
+                            <span style="font-size:xx-large">Bruno FERRES&nbsp;&nbsp;&nbsp;&nbsp;</span><span data-translate id="myJob" class="hide-on-med-and-down"></span>
+                            <a href="#" data-target="mobile-menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                            <ul class="hide-on-med-and-down right">
                                 <li><a data-translate id="myHome" href="index.html"></a></li>
                                 <li><a data-translate href="publications.html">Publications</a></li>
                                 <li class="active"><a data-translate id="myTeaching"></a></li>
                                 <li><a data-translate href="personal.html" id="myPersonal"></a></li>
-                                <li><a onclick="translate()"><img img-translate width="30" src="images/english.jpg"/></a></li>
+                                <li><a onclick="translateContent()"><img img-translate width="30" src="images/english.jpg"/></a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
         </header>
+
+        <ul class="sidenav center" id="mobile-menu">
+            <li><a data-translate id="myHome" href="index.html"></a></li>
+            <li><a href="publications.html" data-translate>Publications</a></li>
+            <li class="active"><a data-translate id="myTeaching"></a></li>
+            <li><a href="personal.html" data-translate id="myPersonal"></a></li>
+            <li><a onclick="translateContentAndQuit()"><img img-translate width="30" src="images/english.jpg"/></a></li>
+        </ul>       
 
         <main>
             <div class="container">
@@ -94,8 +103,9 @@
         </footer>
 
         <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!--Load jQuery before materialize-->
         <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/custom.js"></script>
     </body>
 </html>
