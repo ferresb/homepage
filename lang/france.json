@@ -1,0 +1,21 @@
+{
+    "myTitle": "Page d'accueil",
+    "myHome": "Accueil",
+    "myTeaching": "Enseignements",
+    "myPersonal": "Personnel",
+    "myAbout": "À propos",
+    "myDefense": "Toutes les informations à propos de ma soutenance de thèse sont disponibles",
+    "myDefenseLink": "ici",
+    "myPoweredBy": "Basé sur",
+    "myEducation": "Formation",
+    "myPhD": "Thèse de doctorat préparée au sein de l'équipe SLS du laboratoire TIMA",
+    "myPhDTopic": "Sujet :",
+    "myPhDTitle": "\"Utilisation de langages de construction matérielle pour une exploration flexible des espaces de conception sur FPGA\"",
+    "myEnsimag": "Diplôme d'Ingénieur en Informatique et Mathématiques Appliquées",
+    "myMajor": "Spécialité en Systèmes et Logiciels Embarqués (SLE)",
+    "myCySec": "Master en Cybersécurité",
+    "myBio": "Biographie",
+    "myBioContent": "Je suis doctorant dans l'équipe SLS du laboratoire TIMA depuis Octobre 2018, après mon passage à l'Ensimag où j'ai étudié les Systèmes et Logiciels Embarqués, et à l'Université Grenoble Alpes, où j'ai obtenu un double diplôme en cyber-sécurité.",
+    "myBioContent2": "Mes recherches sont dirigées par Frédéric Rousseau et encadrées par Olivier Muller, et visent à utiliser le paradigme émergent des languages de construction matérielle pour développer une méthodologie flexible d'exploration d'espace de conception, avec un logiciel prototype proposé en Chisel.",
+    "myPostDoc": "À compter de Mars 2022, je serai en post doc dans l'équipe CASH du laboratoire LIP, à Lyon. Je travaillerai sur la vérification formelle de circuits électroniques au niveau transistor."
+}

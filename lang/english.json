@@ -1,0 +1,21 @@
+{
+    "myTitle": "Homepage",
+    "myHome": "Home",
+    "myTeaching": "Teaching",
+    "myPersonal": "Personal",
+    "myAbout": "About",
+    "myDefense": "To check about my PhD defense, please click",
+    "myDefenseLink": "here",
+    "myPoweredBy": "Powered by",
+    "myEducation": "Education",
+    "myPhD": "PhD thesis prepared at TIMA laboratory, in the System Level Synthesis (SLS) team" ,
+    "myPhDTopic": "Topic:",
+    "myPhDTitle": "\"Leveraging Hardware Construction Languages for Flexible Design Space Exploration on FPGA\"",
+    "myEnsimag": "Engineering Degree in Computer Science and Applied Mathematics",
+    "myMajor": "Major in Embedded Software and Systems",
+    "myCySec": "MS in CyberSecurity",
+    "myBio": "Biography",
+    "myBioContent": "I’ve been a PhD student at TIMA-SLS since October, 2018, after graduating from Grenoble INP - Ensimag, where I studied Embedded Systems and Software, and Université Grenoble Alpes, where I studied CyberSecurity.",
+    "myBioContent2": "My researches are directed by Frédéric Rousseau and supervised by Olivier Muller, and aim at using the emerging paradigm of Hardware Construction Languages to build a flexible exploration methodology, along with a PoC framework based on Chisel.",
+    "myPostDoc": "By March 2022, I'll be a post doc at LIP laboratory (Lyon), in the CASH team. I'll be working on formal verification of electronical circuits at transistor level"
+}

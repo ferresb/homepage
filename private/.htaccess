@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Protected"
+AuthUserFile "/var/secured/password"
+require valid-user
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
