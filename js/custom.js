@@ -33,7 +33,7 @@ function translate() {
         if (translation != null) element.innerText = translation
         if (element.href != null & element.href != "") {
             if (element.href.includes("?lang")) {
-                element.href = element.href.replace(oldLang, curLang)
+                element.href = element.href.replace("?lang=" + oldLang, "?lang=" + curLang)
             } else {
                 element.href = element.href + "?lang=" + curLang
             }
