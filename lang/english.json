@@ -1,5 +1,6 @@
 {
-    "myTitle": "Homepage",
+    "myIndexTitle": "Homepage",
+    "myJob": "PhD candidate at Univ. Grenoble Alpes",
     "myHome": "Home",
     "myTeaching": "Teaching",
     "myPersonal": "Personal",
@@ -32,7 +33,7 @@
     "myThematics": "Topics",
     "myDSE": "Design Space Exploration",
     "myInternationalProceedings": "International Conferences and Workshops",
-    "myTODO": "Whoops... There is nothing here !",
+    "myTeachingTitle": "Teaching",
     "myTeachingTraining": "Pedagogical training",
     "myLabelRes": "Label «Research and Teaching at University»",
     "myLabelResContent": "Set of classes which aims to train students to the professor job. A dissertation on this training and my teaching experience can be found",
@@ -40,5 +41,7 @@
     "myLabelResSite": "Training website (in French).",
     "myTeachingExperience": "Teaching experience",
     "myEnsimagClasses": "Basics on computer architectures and digital design; processor exploitation (MIPS/RISC-V assembly); C programming project (building a graphic library).",
-    "myPolytechClasses": "UNIX project: how to use the system primitives to program a mail Client through explicit synchronization." 
+    "myPolytechClasses": "UNIX project: how to use the system primitives to program a mail Client through explicit synchronization.",
+    "myPersonalTitle": "Personal",
+    "myTODO": "Whoops... There is nothing here !"
 }
