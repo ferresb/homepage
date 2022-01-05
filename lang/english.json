@@ -18,8 +18,11 @@
     "myBio": "Biography",
     "myBioContent": "I’ve been a PhD student at TIMA-SLS since October, 2018, after graduating from Grenoble INP - Ensimag, where I studied Embedded Systems and Software, and Université Grenoble Alpes, where I studied CyberSecurity.",
     "myBioContent2": "My researches are directed by Frédéric Rousseau and supervised by Olivier Muller, and aim at using the emerging paradigm of Hardware Construction Languages to build a flexible exploration methodology, along with a PoC framework based on Chisel.",
-    "myPostDoc": "By March 2022, I'll be a post doc at LIP laboratory (Lyon), in the CASH team. I'll be working on formal verification of electronical circuits at transistor level",
+    "myPostDoc": "By March 2022, I'll be a post doc at LIP laboratory (Lyon), in the CASH team. I'll be working on formal verification of electronical circuits at transistor level.",
     "myThematics": "Topics",
     "myDSE": "Design Space Exploration",
-    "myInternationalProceedings": "International Conferences and Workshops"
+    "myInternationalProceedings": "International Conferences and Workshops",
+    "myTODO": "Whoops... There is nothing here !",
+    "myEnsimagClasses": "Basics on computer architectures, processor exploitation (MIPS/RISC-V assembly), C programming (building a graphic library).",
+    "myPolytechClasses": "UNIX Project: how to use system primitives to program a mail Client through explicit synchronization." 
 }

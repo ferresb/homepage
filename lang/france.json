@@ -21,5 +21,8 @@
     "myPostDoc": "À compter de Mars 2022, je serai en post doc dans l'équipe CASH du laboratoire LIP, à Lyon. Je travaillerai sur la vérification formelle de circuits électroniques au niveau transistor.",
     "myThematics": "Thématiques",
     "myDSE": "Exploration d'espace de conception",
-    "myInternationalProceedings": "Conférences internationales"
+    "myInternationalProceedings": "Conférences internationales",
+    "myTODO": "Oups... Il n'y a rien pour l'instant!",
+    "myEnsimagClasses": "Architecture: circuits numériques et éléments d'architecture / Exploitation des processeurs (assembleurs MIPS & RISC-V), programmation en C (projet de conception d'une bibliothèque graphique).",
+    "myPolytechClasses": "Projet UNIX: utilisation de primitives systèmes pour concevoir un client de messagerie basé sur une synchronisation explicite."
 }
