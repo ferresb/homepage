@@ -4,21 +4,43 @@ let en = loadMap("/lang/english.json", loader)
 const translations = new Map().set('en', en).set('fr', fr);
 const flags = new Map().set('fr', 'english.jpg').set('en', 'france.jpg');
 
-const languages = ['fr', 'en']; 
-var curLang = 1;
+function getLang() {
+    var tmp = getParameter('lang');
+    if (tmp == null) {
+        return 'en';
+    } else {
+        return changeLang(tmp);
+    }
+}
+
+var curLang = getLang()
 var received = 0;
+
+function changeLang(lang) {
+    return (lang === 'en') ? 'fr': 'en';
+}
 
 function translate() {
     const flagsToTranslate = document.querySelectorAll('[img-translate]');
     const elementsToTranslate = document.querySelectorAll('[data-translate]');
 
-    curLang = (curLang === 0) ? 1: 0;
+    const oldLang = curLang;
+    curLang = changeLang(curLang)
 
     for (const element of elementsToTranslate) {
-        element.innerText = translations.get(languages[curLang]).get(element.getAttribute('id'));
+        const myId = element.getAttribute('id')
+        var translation = translations.get(curLang).get(myId);
+        if (translation != null) element.innerText = translation
+        if (element.href != null & element.href != "") {
+            if (element.href.includes("?lang")) {
+                element.href = element.href.replace(oldLang, curLang)
+            } else {
+                element.href = element.href + "?lang=" + curLang
+            }
+        }
     }
     for (const flag of flagsToTranslate) {
-        flag.src = "images/" + flags.get(languages[curLang]);
+        flag.src = "images/" + flags.get(curLang);
     }
 }
 
@@ -37,4 +59,10 @@ function loader() {
     if (received >= 2) {
         translate()
     }
+}
+
+function getParameter(key) {
+    address = window.location.search
+    parameterList = new URLSearchParams(address)
+    return parameterList.get(key)
 }
