@@ -52,6 +52,7 @@ $(TARGET_DIR):
 $(JSTARGET): $(SRC_DIR)/$(JSFOLDER)
 	@rm -rf $@
 	@cp -r $< $@
+	@sed -i s/"return changeLang('french')"/"return changeLang('$(LANGUAGE)')"/g $(JSTARGET)/custom.js
 
 $(CSSTARGET): $(SRC_DIR)/$(CSSFOLDER)
 	@rm -rf $@
