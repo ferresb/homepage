@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="shortcut icon" type="image/ico" href="images/icon.png"/>
+
+        <title>Bruno Ferres</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar-fixed">
+                <nav class="nav green lighten-2">
+                    <div class="nav-wrapper">
+                        <div class="container">
+                            <span style="font-size:xx-large">Bruno FERRES&nbsp;&nbsp;&nbsp;&nbsp;</span><span data-translate id="myJob" class="hide-on-med-and-down">Doctorant à l'Université Grenoble Alpes</span>
+                            <a href="#" data-target="mobile-menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                            <ul class="hide-on-med-and-down right">
+                                <li><a href="index.html"><span data-translate id="myHome">Accueil</span></a></li>
+                                <li><a href="publications.html"><span data-translate>Publications</span></a></li>
+                                <li><a href="teaching.html"><span data-translate id="myTeaching">Enseignements</span></a></li>
+                                <li><a href="personal.html"><span data-translate id="myPersonal">Personnel</span></a></li>
+                                <li><a onclick="translateContent()"><img img-translate width="30" src="images/english.jpg" title="Require javascript to be enabled!"/></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <ul class="sidenav center" id="mobile-menu">
+            <li><a href="index.html"><span data-translate id="myHome">Accueil</span></a></li>
+            <li><a href="publications.html"><span data-translate>Publications</span></a></li>
+            <li><a href="teaching.html"><span data-translate id="myTeaching">Enseignements</span></a></li>
+            <li><a href="personal.html"><span data-translate id="myPersonal">Personnel</span></a></li>
+            <li><a onclick="translateContentAndQuit()"><img img-translate width="30" src="images/english.jpg"/></a></li>
+        </ul>
+
+        <main>
+            <div class="container">
+                <div class="center">
+                    <br/>
+                    <a data-translate class="waves-effect waves-light btn-large" id="myDefense" href="soutenance.html">Toutes les informations à propos de ma soutenance de thèse sont disponibles ici.</a>
+                    <br/>
+                </div>
+                <br/>
+                <div class="divider"></div>
+                <h5 data-translate id="myEducation">Formation</h5>
+                <div class="row">
+                    <div class="col s1 offset-s2"><b>2018 - 2022</b></div>
+                    <div class="col s7 center">
+                        <span data-translate id="myPhD">Thèse de doctorat préparée au sein de l'équipe SLS du laboratoire TIMA.</span>
+                        </br>
+                        <b><span data-translate id="myPhDTopic">Sujet :</span></b> <i><span data-translate id="myPhDTitle">"Utilisation de langages de construction matérielle pour une exploration flexible des espaces de conception sur FPGA"</span></i>
+                    </div>
+                    <div class="col s2"><b class="right">Université Grenoble Alpes</b></div>
+                </div>
+                <div class="row">
+                    <div class="col s1 offset-s2"><b>2015 - 2018</b></div>
+                    <div class="col s7 center">
+                        <span data-translate id="myEnsimag">Diplôme d'Ingénieur en Informatique et Mathématiques Appliquées</span>
+                        <br/>
+                        <i><span data-translate id="myMajor">Spécialité en Systèmes et Logiciels Embarqués (SLE)</span></i>
+                    </div>
+                    <div class="col s2"><b class="right">Grenoble INP - Ensimag</b></div>
+                </div>
+                <div class="row">
+                    <div class="col s1 offset-s2"><b>2017 - 2018</b></div>
+                    <div class="col s7 center">
+                        <span data-translate id="myCySec">Master en Cybersécurité</span>
+                    </div>
+                    <div class="col s2"><b class="right">Université Grenoble Alpes</b></div>
+                </div>
+                <div class="divider"></div>
+                <h5 data-translate id="myBio">Biographie</h5>
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s10">
+                        <span data-translate id="myBioContent">
+                            Je suis doctorant dans l'équipe SLS du laboratoire TIMA depuis Octobre 2018, après mon passage à l'Ensimag où j'ai étudié les Systèmes et Logiciels Embarqués, et à l'Université Grenoble Alpes, où j'ai obtenu un double diplôme en cyber-sécurité.
+                        </span>
+                        <br/>
+                        <span data-translate id="myBioContent2">
+                            Mes recherches sont dirigées par Frédéric Rousseau et encadrées par Olivier Muller, et visent à utiliser le paradigme émergent des languages de construction matérielle pour développer une méthodologie flexible d'exploration d'espace de conception, avec un logiciel prototype proposé en Chisel.
+                        </span>
+                        <br/>
+                        <br/>
+                        <span data-translate id="myPostDoc">
+                            À compter de Mars 2022, je serai en post doc dans l'équipe CASH du laboratoire LIP, à Lyon. Je travaillerai sur la vérification formelle de circuits électroniques au niveau transistor.
+                        </span>
+                        <br/> 
+                        <br/> 
+                        <u><b><span data-translate id="myUsefulLinks">Liens utiles</span></b></u> <a href="http://tima.imag.fr/sls" data-translate id="mySlsSite">Site web de l'équipe SLS</a> / <a href="http://www.ens-lyon.fr/LIP/CASH/" data-translate id="myCashSite">Site web de l'équipe CASH</a>
+                        <br/>
+                    </div>
+                </div>
+                <br/>
+                <div class="divider"></div>
+                <h5 data-translate id="myProjects">Projets</h5>
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s10">
+                        <a href="https://github.com/ferresb/homepage"><b><span data-translate id="myHomepage">Sources de cette page web</span></b></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s10">
+                        <a href="https://gricad-gitlab.univ-grenoble-alpes.fr/tima/sls/projects/qece"><b>QECE</b> (<i>Quick Exploration using Chisel Estimators</i>)</a>
+                        <br/>
+                        <span data-translate id="myQece">
+                            Prototype logiciel permettant à la fois de définir des méthodologies adaptables d'estimation de circuit numérique, et des processus flexibles d'exploration d'espace de conception.
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s10">
+                        <a href="https://gricad-gitlab.univ-grenoble-alpes.fr/tima/sls/projects/qece-benchmark"><b>QECE-benchmark</b></a>
+                        <br/>
+                        <span data-translate id="myQeceBenchmark">
+                            Banc d'applications représentatives de l'utilisation des FPGAs, utilisé pour démontrer l'utilisabilité de QECE sur divers cas d'utilisation.
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s10">
+                        <a><b><span data-translate id="myThesisTemplateName">Modèle de thèse</span></b> - Université Grenoble Alpes</a>
+                        <br/>
+                        <span data-translate id="myThesisTemplate">Travail en cours...</span>
+                    </div>
+                </div>
+                <br/>
+            </div>
+        </main>
+        <footer class="page-footer green lighten-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <a href="mailto:bruno.ferres@grenoble-inp.org"><i class="medium material-icons black-text center hoverable">mail</i></a>
+                        <a href="https://github.com/ferresb"><img width="55" src="images/github.png" class="hoverable"/></a>
+                        <a href="https://scholar.google.fr/citations?user=x7_S3xAAAAAJ&hl=fr"><img width="50" src="images/google-scholar.png" class="hoverable"/></a>
+                        &nbsp;
+                        <a href="https://www.linkedin.com/in/bruno-ferres-a52783ba/"><img width="50" src="images/linkedin.png" class="hoverable"/></a>
+                    </div>
+                    <div class="col l6 s12">
+                        <a href="private/private.html" class="right"><i class="medium material-icons black-text center hoverable">lock</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container center">
+                    <b>© 2022 Bruno FERRES - <span data-translate id='myPoweredBy'>Basé sur</span> <a href="https://materializecss.com/about.html">materialize</a>.</b>
+                </div>
+            </div>
+        </footer>
+
+        <!--JavaScript at end of body for optimized loading-->
+        <!--Load jQuery before materialize-->
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </body>
+</html>
