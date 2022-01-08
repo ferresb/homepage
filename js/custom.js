@@ -32,7 +32,7 @@ function translateContentAndQuit() {
 function getLang() {
     var tmp = getParameter('lang');
     if (tmp == null) {
-        return changeLang('french');
+        return changeLang('english');
     } else {
         return changeLang(tmp);
     }
