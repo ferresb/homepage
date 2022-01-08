@@ -5,13 +5,13 @@ import json
 
 flag    = "data-translate"
 TPE     = {"span", "link", "item"}
-pattern = re.compile('{{.*}}')
+pattern = re.compile('{{[^}]*}}')
 
 class PlaceHolder:
     def __init__(self, url, config, string):
         def findValue(key, default = None, error = False):
                 def findall(key):
-                    return re.compile('{}="[^" \r\n]+"'.format(key)).findall(string)
+                    return re.compile('{}="[^"\r\n]+"'.format(key)).findall(string)
                 def getInner(l, key, default):
                     if len(l) == 0:
                         if error:
@@ -41,7 +41,7 @@ class PlaceHolder:
         tmpId       = " id=\"" + self.id + "\"" if self.id else ""
         tmpClass    = " class=\"" + self.cls + "\"" if self.cls else ""
         tmpLink     = " href=\"" + self.link + "\"" if self.link else ""
-        tmpText     = self.text if self.text else ""
+        tmpText     = self.text.replace("\n", "<br/>") if self.text else ""
         baseEntry   = "<span {}{}{}>{}</span>".format(flag, tmpId, tmpClass, tmpText)
         if self.tpe == "span":
             return baseEntry
@@ -51,7 +51,7 @@ class PlaceHolder:
             linkEntry   = "<a {}{}{}{}>{}</a>".format(flag, tmpId, tmpLink, tmpClass, tmpText)
         if self.tpe == "link":
             if self.link == self.url:
-                return baseEntry
+                return linkEntry
             else:
                 return linkEntry
         if self.tpe == "item":
@@ -72,10 +72,9 @@ def replace(args):
     srcLines = f.readlines()
     f.close()
     for i in range(0, len(srcLines)):
-        line = srcLines[i]
-        for p in pattern.finditer(line):
+        for p in pattern.finditer(srcLines[i]):
             ph = PlaceHolder(args.src, config, p.group().replace("{{", "").replace("}}", "")) 
-            srcLines[i] = line.replace(p.group(), ph.buildEntry())
+            srcLines[i] = srcLines[i].replace(p.group(), ph.buildEntry())
     f = open(args.dest, 'w')
     for line in srcLines:
         f.write(line)
