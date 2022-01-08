@@ -4,7 +4,7 @@ import re
 import json
 
 flag    = "data-translate"
-TPE     = {"span", "link", "item"}
+TPE     = {"span", "link", "item", "pin"}
 pattern = re.compile('{{[^}]*}}')
 
 class PlaceHolder:
@@ -27,6 +27,7 @@ class PlaceHolder:
         self.id     = findValue("id")
         self.link   = findValue("href")
         self.cls    = findValue("class")
+        self.color  = findValue("color", "blue")
         self.url    = url.split("/")[-1]
         try:
             self.text   = config[self.id].encode('utf-8')
@@ -43,6 +44,8 @@ class PlaceHolder:
         tmpLink     = " href=\"" + self.link + "\"" if self.link else ""
         tmpText     = self.text.replace("\n", "<br/>") if self.text else ""
         baseEntry   = "<span {}{}{}>{}</span>".format(flag, tmpId, tmpClass, tmpText)
+        if self.tpe == "pin":
+            return "<i class=\"material-icons {}-text\">blur_circular</i>".format(self.color)
         if self.tpe == "span":
             return baseEntry
         if self.link == self.url:

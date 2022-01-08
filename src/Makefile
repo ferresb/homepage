@@ -3,39 +3,63 @@
 LANGUAGE	?= french
 COLOR		?= green
 
-SCRIPT 		:= script/generate.py
-
 SRC_DIR 	:= .
-TMP_DIR 	:= tmp
 TARGET_DIR	:= target
 CONFIG_DIR	:= ../lang
+
+SCRIPT 		:= script/generate.py
 
 HEADER := $(SRC_DIR)/header.html
 NAVBAR := $(SRC_DIR)/navbar.html
 FOOTER := $(SRC_DIR)/footer.html
 
-.PHONY: all clean realclean
+JSFOLDER 	:= js
+JSTARGET	:= $(TARGET_DIR)/$(JSFOLDER)
 
-all: $(TARGET_DIR)/index.html
+CSSFOLDER	:= css
+CSSTARGET	:= $(TARGET_DIR)/$(CSSFOLDER)
 
-$(TARGET_DIR)/index.html: $(TMP_DIR)/index.html $(TARGET_DIR)
+IMAGEFOLDER	:= images
+IMAGETARGET	:= $(TARGET_DIR)/$(IMAGEFOLDER)
+
+CONFIGFOLDER	:= lang
+CONFIGTARGET	:= $(TARGET_DIR)/$(CONFIGFOLDER)
+
+.PHONY: all clean $(TARGET_DIR)
+
+all: $(TARGET_DIR)/index.html $(TARGET_DIR)/publications.html $(TARGET_DIR)/teaching.html $(TARGET_DIR)/personal.html $(TARGET_DIR)/soutenance.html $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) #$(TARGET_DIR)/portfolio.pdf
+
+$(TARGET_DIR)/soutenance.html: $(SRC_DIR)/soutenance.html
 	@cp $< $@
 
-$(TMP_DIR)/index.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TMP_DIR) index.html
+$(TARGET_DIR)/porfolio.pdf: $(SRC_DIR)/portfolio.pdf
+	@ln -s $@ $<
+
+$(TARGET_DIR)/%.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) %.html
 	@cat $(HEADER) 	> 	$@
 	@cat $(NAVBAR) 	>> 	$@
-	@cat index.html >> 	$@
+	@cat $*.html 	>> 	$@
 	@cat $(FOOTER) 	>> 	$@
 	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language $(LANGUAGE) --color $(COLOR)
-
-$(TMP_DIR):
-	@mkdir -p $@
 
 $(TARGET_DIR):
 	@mkdir -p $@
 
-clean:
-	@rm -rf $(TMP_DIR)
+$(JSTARGET): $(SRC_DIR)/$(JSFOLDER)
+	@rm -rf $@
+	@cp -r $< $@
 
-realclean: clean
+$(CSSTARGET): $(SRC_DIR)/$(CSSFOLDER)
+	@rm -rf $@
+	@cp -r $< $@
+
+$(IMAGETARGET): $(SRC_DIR)/$(IMAGEFOLDER)
+	@rm -rf $@
+	@cp -r $< $@
+
+$(CONFIGTARGET): $(SRC_DIR)/$(CONFIGFOLDER)
+	@rm -rf $@
+	@cp -r $< $@
+
+clean:
 	@rm -rf $(TARGET_DIR)
