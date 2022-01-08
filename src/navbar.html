@@ -4,13 +4,13 @@
                 <nav class="nav green lighten-2">
                     <div class="nav-wrapper">
                         <div class="container">
-                            <span style="font-size:xx-large">Bruno FERRES&nbsp;&nbsp;&nbsp;&nbsp;</span><span data-translate id="myJob" class="hide-on-med-and-down">Doctorant à l'Université Grenoble Alpes</span>
+                            <span style="font-size:xx-large">Bruno FERRES&nbsp;&nbsp;&nbsp;&nbsp;</span>{{class="hide-on-med-and-down" id="myJob"}}
                             <a href="#" data-target="mobile-menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
                             <ul class="hide-on-med-and-down right">
-                                <li><a href="index.html"><span data-translate id="myHome">Accueil</span></a></li>
-                                <li><a href="publications.html"><span data-translate>Publications</span></a></li>
-                                <li><a href="teaching.html"><span data-translate id="myTeaching">Enseignements</span></a></li>
-                                <li><a href="personal.html"><span data-translate id="myPersonal">Personnel</span></a></li>
+                                {{tpe="item" href="index.html" id="myHome"}}
+                                {{tpe="item" href="publications.html" id="myPublications"}}
+                                {{tpe="item" href="teaching.html" id="myTeaching"}}
+                                {{tpe="item" href="personal.html" id="myPersonal"}}
                                 <li><a onclick="translateContent()"><img img-translate width="30" src="images/english.jpg" title="Require javascript to be enabled!"/></a></li>
                             </ul>
                         </div>
@@ -20,10 +20,10 @@
         </header>
 
         <ul class="sidenav center" id="mobile-menu">
-            <li><a href="index.html"><span data-translate id="myHome">Accueil</span></a></li>
-            <li><a href="publications.html"><span data-translate>Publications</span></a></li>
-            <li><a href="teaching.html"><span data-translate id="myTeaching">Enseignements</span></a></li>
-            <li><a href="personal.html"><span data-translate id="myPersonal">Personnel</span></a></li>
+            {{tpe="item" href="index.html" id="myHome"}}
+            {{tpe="item" href="publications.html" id="myPublications"}}
+            {{tpe="item" href="teaching.html" id="myTeaching"}}
+            {{tpe="item" href="personal.html" id="myPersonal"}}
             <li><a onclick="translateContentAndQuit()"><img img-translate width="30" src="images/english.jpg"/></a></li>
         </ul>
 

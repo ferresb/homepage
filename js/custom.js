@@ -1,6 +1,6 @@
 // load language files
-let fr = loadMap("/lang/france.json", loader);
-let en = loadMap("/lang/english.json", loader);
+let french = loadMap("/lang/french.json", loader);
+let english = loadMap("/lang/english.json", loader);
 
 // get current language
 var curLang = getLang();
@@ -8,8 +8,8 @@ var curLang = getLang();
 var received = 0;
 
 // build translation maps
-const translations = new Map().set('en', en).set('fr', fr);
-const flags = new Map().set('fr', 'english.jpg').set('en', 'france.jpg');
+const translations = new Map().set('english', english).set('french', french);
+const flags = new Map().set('french', 'english.jpg').set('english', 'france.jpg');
 
 // build sidenav on mobile
 $(document).ready(function(){
@@ -32,7 +32,7 @@ function translateContentAndQuit() {
 function getLang() {
     var tmp = getParameter('lang');
     if (tmp == null) {
-        return 'en';
+        return 'english';
     } else {
         return changeLang(tmp);
     }
@@ -40,7 +40,7 @@ function getLang() {
 
 // switch language
 function changeLang(lang) {
-    return (lang === 'en') ? 'fr': 'en';
+    return (lang === 'english') ? 'french': 'english';
 }
 
 // translate the content of the actual page, using placeholders
