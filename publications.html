@@ -1,118 +1,41 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
-
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-        <link rel="shortcut icon" type="image/ico" href="images/icon.png"/>
-
-        <title>Publications</title>
-    </head>
-    
-    <body>
-        <header>
-            <div class="navbar-fixed">
-                <nav class="nav green lighten-2">
-                    <div class="nav-wrapper">
-                        <div class="container">
-                            <span style="font-size:xx-large">Bruno FERRES&nbsp;&nbsp;&nbsp;&nbsp;</span><span data-translate id="myJob" class="hide-on-med-and-down">Doctorant à l'Université Grenoble Alpes</span>
-                            <a href="#" data-target="mobile-menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-                            <ul class="hide-on-med-and-down right">
-                                <li><a data-translate id="myHome" href="index.html">Accueil</a></li>
-                                <li class="active"><a data-translate>Publications</a></li>
-                                <li><a href="teaching.html" data-translate id="myTeaching">Enseignements</a></li>
-                                <li><a href="personal.html" data-translate id="myPersonal">Personnel</a></li>
-                                <li><a onclick="translateContent()"><img img-translate width="30" src="images/english.jpg" title="Require javascript to be enabled!"/></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-        <ul class="sidenav center" id="mobile-menu">
-            <li><a data-translate id="myHome" href="index.html">Accueil</a></li>
-            <li class="active"><a data-translate>Publications</a></li>
-            <li><a href="teaching.html" data-translate id="myTeaching">Enseignements</a></li>
-            <li><a href="personal.html" data-translate id="myPersonal">Personnel</a></li>
-            <li><a onclick="translateContentAndQuit()"><img img-translate width="30" src="images/english.jpg"/></a></li>
-        </ul>
-
         <main>
             <div class="container">
-                <h5 data-translate id="myThematics">Thématiques</h5>
+                <h5>{{id="myThematics"}}</h5>
                 <br/>
                 <div class="row">
-                    <div class="col s1"><i class="material-icons blue-text">blur_circular</i></div>
-                    <div class="col s4"><span data-translate id="myDSE" class="left">Exploration d'espace de conception</span></div>
+                    <div class="col s1">{{tpe="pin" color="blue"}}</div>
+                    <div class="col s4">{{id="myDSE" class="left"}}</div>
                 </div>
                 <div class="row">
-                    <div class="col s1"><i class="material-icons green-text">blur_circular</i></div>
+                    <div class="col s1">{{tpe="pin" color="green"}}</div>
                     <div class="col s4"><span class="left">Field-Programmable Gate Arrays</span></div>
                 </div>
                 <div class="divider"></div>
-                <h5 data-translate id="myInternationalProceedings">Conférences internationales</h5>
+                <h5>{{id="myInternationalProceedings"}}</h5>
                 <br/>
                 <div class="row">
-                    <div class="col s1 center"><i class="material-icons green-text">blur_circular</i><i class="material-icons blue-text">blur_circular</i></div>
+                    <div class="col s1 center">{{tpe="pin" color="green"}}{{tpe="pin" color="blue"}}</div>
                     <div class="col s11">
                         <u>Bruno Ferres</u>, Olivier Muller, Frédéric Rousseau, <a href="">Integrating Quick Resource Estimators in Hardware Construction Framework for Design Space Exploration</a>. In Proc. of the 32nd International Workshop on Rapid System Prototyping (<a href="">RSP'2021</a>), <i>Virtual event</i>, 2021.
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s1 center"><i class="material-icons green-text">blur_circular</i><i class="material-icons blue-text">blur_circular</i></div>
+                    <div class="col s1 center">{{tpe="pin" color="green"}}{{tpe="pin" color="blue"}}</div>
                     <div class="col s11">
                         <u>Bruno Ferres</u>, Olivier Muller, Frédéric Rousseau, <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-44534-8_5">Chisel Usecase: Designing General Matrix Multiply for FPGA</a>. In Proc. of the 16th International Symposium on Applied Reconfigurable Computing (<a href="https://link.springer.com/book/10.1007/978-3-030-44534-8">ARC 2020</a>), Toledo, Spain, 2020.
                     </div>
                 </div>
                 <br/>
                 <div class="divider"></div>
-                <h5 data-translate id="myPhDShort">Thèse de doctorat (en cours)</h5>
+                <h5>{{id="myPhDShort"}}</h5>
                 <br/>
                 <div class="row">
-                    <div class="col s1 center"><i class="material-icons green-text">blur_circular</i><i class="material-icons blue-text">blur_circular</i></div>
+                    <div class="col s1 center">{{tpe="pin" color="green"}}{{tpe="pin" color="blue"}}</div>
                     <div class="col s11">
-                        <u>Bruno Ferres</u>, <i><a data-translate href="" id="myPhDTitle">"Utilisation de langages de construction matérielle pour une exploration flexible des espaces de conception sur FPGA"</a></i>, Université Grenoble Alpes, 2022.
+                        <u>Bruno Ferres</u>, <i>{{tpe="link" id="myPhDTitle" href=""}}</i>, Université Grenoble Alpes, 2022.
                     </div>
                 </div>
                 <br/>
                 <div class="divider"></div>
             </div>
         </main>
-
-        <footer class="page-footer green lighten-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <a href="mailto:bruno.ferres@grenoble-inp.org"><i class="medium material-icons black-text center hoverable">mail</i></a>
-                        <a href="https://github.com/ferresb"><img width="55" src="images/github.png" class="hoverable"/></a>
-                        <a href="https://scholar.google.fr/citations?user=x7_S3xAAAAAJ&hl=fr"><img width="50" src="images/google-scholar.png" class="hoverable"/></a>
-                        &nbsp;
-                        <a href="https://www.linkedin.com/in/bruno-ferres-a52783ba/"><img width="50" src="images/linkedin.png" class="hoverable"/></a>
-                    </div>
-                    <div class="col l6 s12">
-                        <a href="private/private.html" class="right"><i class="medium material-icons black-text center hoverable">lock</i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container center">
-                    <b>© 2022 Bruno FERRES - <span data-translate id='myPoweredBy'>Basé sur</span> <a href="https://materializecss.com/about.html">materialize</a>.</b>
-                </div>
-            </div>
-        </footer>
-
-        <!--JavaScript at end of body for optimized loading-->
-        <!--Load jQuery before materialize-->
-        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
-    </body>
-</html>

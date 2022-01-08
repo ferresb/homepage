@@ -5,7 +5,7 @@ COLOR		?= green
 
 SRC_DIR 	:= .
 TARGET_DIR	:= target
-CONFIG_DIR	:= ../lang
+CONFIG_DIR	:= lang
 
 SCRIPT 		:= script/generate.py
 
@@ -22,12 +22,15 @@ CSSTARGET	:= $(TARGET_DIR)/$(CSSFOLDER)
 IMAGEFOLDER	:= images
 IMAGETARGET	:= $(TARGET_DIR)/$(IMAGEFOLDER)
 
-CONFIGFOLDER	:= lang
+CONFIGFOLDER	:= $(CONFIG_DIR)
 CONFIGTARGET	:= $(TARGET_DIR)/$(CONFIGFOLDER)
+
+PRIVATEFOLDER	:= private
+PRIVATETARGET	:= $(TARGET_DIR)/$(PRIVATEFOLDER)
 
 .PHONY: all clean $(TARGET_DIR)
 
-all: $(TARGET_DIR)/index.html $(TARGET_DIR)/publications.html $(TARGET_DIR)/teaching.html $(TARGET_DIR)/personal.html $(TARGET_DIR)/soutenance.html $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) #$(TARGET_DIR)/portfolio.pdf
+all: $(TARGET_DIR)/index.html $(TARGET_DIR)/publications.html $(TARGET_DIR)/teaching.html $(TARGET_DIR)/personal.html $(TARGET_DIR)/soutenance.html $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) $(PRIVATETARGET)#$(TARGET_DIR)/portfolio.pdf
 
 $(TARGET_DIR)/soutenance.html: $(SRC_DIR)/soutenance.html
 	@cp $< $@
@@ -58,6 +61,10 @@ $(IMAGETARGET): $(SRC_DIR)/$(IMAGEFOLDER)
 	@cp -r $< $@
 
 $(CONFIGTARGET): $(SRC_DIR)/$(CONFIGFOLDER)
+	@rm -rf $@
+	@cp -r $< $@
+
+$(PRIVATETARGET): $(SRC_DIR)/$(PRIVATEFOLDER)
 	@rm -rf $@
 	@cp -r $< $@
 

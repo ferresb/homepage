@@ -1,73 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
-
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-        <link rel="shortcut icon" type="image/ico" href="images/icon.png"/>
-
-        <title data-translate id="myTeachingTitle">Enseignements</title>
-    </head>
-    
-    <body>
-        <header>
-            <div class="navbar-fixed">
-                <nav class="nav-extended green lighten-2">
-                    <div class="nav-wrapper">
-                        <div class="container">
-                            <span style="font-size:xx-large">Bruno FERRES&nbsp;&nbsp;&nbsp;&nbsp;</span><span data-translate id="myJob" class="hide-on-med-and-down">Doctorant à l'Université Grenoble Alpes</span>
-                            <a href="#" data-target="mobile-menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-                            <ul class="hide-on-med-and-down right">
-                                <li><a data-translate id="myHome" href="index.html">Accueil</a></li>
-                                <li><a data-translate href="publications.html">Publications</a></li>
-                                <li class="active"><a data-translate id="myTeaching">Enseignements</a></li>
-                                <li><a data-translate href="personal.html" id="myPersonal">Personnel</a></li>
-                                <li><a onclick="translateContent()"><img img-translate width="30" src="images/english.jpg" title="Require javascript to be enabled!"/></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-        <ul class="sidenav center" id="mobile-menu">
-            <li><a data-translate id="myHome" href="index.html">Accueil</a></li>
-            <li><a href="publications.html" data-translate>Publications</a></li>
-            <li class="active"><a data-translate id="myTeaching">Enseignements</a></li>
-            <li><a href="personal.html" data-translate id="myPersonal">Personnel</a></li>
-            <li><a onclick="translateContentAndQuit()"><img img-translate width="30" src="images/english.jpg"/></a></li>
-        </ul>       
-
         <main>
             <div class="container">
-                <h4 data-translate id="myTeachingTraining">Formations à l'enseignement</h4>
-                <h5 data-translate id="myLabelRes">Label "Recherche et Enseignement Supérieur"</h5>
+                <h4>{{id="myTeachingTraining"}}</h4>
+                <h5>{{id="myLabelRes}}</h5>
                 <div class="row">
                     <div class="col s1 offset-s2"><b>2019 - 2021</b></div>
                     <div class="col s8 offset-s1">
-                        <span data-translate id="myLabelResContent">
-                            Ensemble de formations visant à former les doctorant·es au métier d'Enseignant/Chercheur. Un mémoire portant sur cette formation et mon expérience d'enseigement peut être trouvé
-                        </span> <a data-translate id="myHereLink" href="portfolio.pdf">ici</a><span data-translate id="myLabelResAdditional"></span>.
+                        {{id="myLabelResContent"}} {{tpe="link" id="myHereLink" href="portfolio.pdf"}}{{id="myLabelResAdditional"}}.
                         <br/>
-                        <a data-translate id="myLabelResSite" href="https://doctorat.univ-grenoble-alpes.fr/pendant-la-these/formation-pendant-la-these/les-parcours-labels/parcours-professionnalisant-label-recherche-et-enseignement-superieur-res--666658.kjsp">Site web du label RES.</a>
+                        {{tpe="link" id="myLabelResSite" href="https://doctorat.univ-grenoble-alpes.fr/pendant-la-these/formation-pendant-la-these/les-parcours-labels/parcours-professionnalisant-label-recherche-et-enseignement-superieur-res--666658.kjsp"}}
                     </div>
                 </div>
                 <div class="divider"></div>
-                <h4 data-translate id="myTeachingExperience">Expérience d'enseignement</h4>
+                <h4>{{id="myTeachingExperience}}</h4>
                 <h5>Ensimag</h5>
                 <div class="row">
                     <div class="col s1 offset-s2"><b>2018 - 2021</b></div>
                     <div class="col s7 offset-s1">
-                        <span data-translate id="myEnsimagClasses">
-                            Architecture: circuits numériques et éléments d'architecture / Exploitation des processeurs (assembleurs MIPS & RISC-V) / Programmation en C (projet de conception d'une bibliothèque graphique).
-                        </span>
+                        {{id="myEnsimagClasses"}}
                     </div>
                     <div class="col s1 center"><b>146h eq. TD</b></div>
                 </div>
@@ -75,9 +24,7 @@
                 <div class="row">
                     <div class="col s1 offset-s2"><b>2018 - 2021</b></div>
                     <div class="col s7 offset-s1">
-                        <span data-translate id="myPolytechClasses">
-                            Projet UNIX: utilisation de primitives systèmes pour concevoir un client de messagerie basé sur une synchronisation explicite.
-                        </span>
+                        {{id="myPolytechClasses"}}
                     </div>
                     <div class="col s1 center"><b>40h eq. TD</b></div>
                 </div>
@@ -85,33 +32,3 @@
                 <br/>
             </div>
         </main>
-
-        <footer class="page-footer green lighten-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <a href="mailto:bruno.ferres@grenoble-inp.org"><i class="medium material-icons black-text center hoverable">mail</i></a>
-                        <a href="https://github.com/ferresb"><img width="55" src="images/github.png" class="hoverable"/></a>
-                        <a href="https://scholar.google.fr/citations?user=x7_S3xAAAAAJ&hl=fr"><img width="50" src="images/google-scholar.png" class="hoverable"/></a>
-                        &nbsp;
-                        <a href="https://www.linkedin.com/in/bruno-ferres-a52783ba/"><img width="50" src="images/linkedin.png" class="hoverable"/></a>
-                    </div>
-                    <div class="col l6 s12">
-                        <a href="private/private.html" class="right"><i class="medium material-icons black-text center hoverable">lock</i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container center">
-                    <b>© 2022 Bruno FERRES - <span data-translate id='myPoweredBy'>Basé sur</span> <a href="https://materializecss.com/about.html">materialize</a>.</b>
-                </div>
-            </div>
-        </footer>
-
-        <!--JavaScript at end of body for optimized loading-->
-        <!--Load jQuery before materialize-->
-        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
-    </body>
-</html>
