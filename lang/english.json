@@ -41,7 +41,7 @@
     "myLabelResAdditional": " (in French)",
     "myLabelResSite": "Training website (in French).",
     "myTeachingExperience": "Teaching experience",
-    "myEnsimagClasses": "Basics on computer architectures and digital design; processor exploitation (MIPS/RISC-V assembly); C programming project (building a graphic library).",
+    "myEnsimagClasses": "Basics on computer architectures and digital design\nProcessor programming (MIPS/RISC-V assembly)\nC programming project (building a graphic library).",
     "myPolytechClasses": "UNIX project: how to use the system primitives to program a mail Client through explicit synchronization.",
     "myPersonalTitle": "Personal",
     "myTODO": "Whoops... There is nothing here !"
