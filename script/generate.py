@@ -6,6 +6,7 @@ import json
 flag    = "data-translate"
 TPE     = {"span", "link", "item", "pin"}
 pattern = re.compile('{{[^}]*}}')
+langPH  = "__LANGUAGE__"
 
 class PlaceHolder:
     def __init__(self, url, config, string):
@@ -69,6 +70,9 @@ def loadJson(args):
     f.close()
     return data
 
+def switchLang(args):
+    return "french" if args.lang == "english" else "english"
+
 def replace(args):
     config = loadJson(args)
     f = open(args.src, 'r')
@@ -80,7 +84,7 @@ def replace(args):
             srcLines[i] = srcLines[i].replace(p.group(), ph.buildEntry())
     f = open(args.dest, 'w')
     for line in srcLines:
-        f.write(line)
+        f.write(line.replace(langPH, switchLang(args)))
     f.close()     
 
 parser = argparse.ArgumentParser(description='Generate a web page from the templating system.')

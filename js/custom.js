@@ -1,6 +1,6 @@
 // load language files
-let french = loadMap("/lang/french.json", loader);
-let english = loadMap("/lang/english.json", loader);
+let french = loadMap("/lang/french.json");
+let english = loadMap("/lang/english.json");
 
 // get current language
 var curLang = getLang();
@@ -9,7 +9,7 @@ var received = 0;
 
 // build translation maps
 const translations = new Map().set('english', english).set('french', french);
-const flags = new Map().set('french', 'english.jpg').set('english', 'france.jpg');
+const flags = new Map().set('french', 'english.jpg').set('english', 'french.jpg');
 
 // build sidenav on mobile
 $(document).ready(function(){
@@ -32,9 +32,9 @@ function translateContentAndQuit() {
 function getLang() {
     var tmp = getParameter('lang');
     if (tmp == null) {
-        return changeLang('english');
+        return 'english';
     } else {
-        return changeLang(tmp);
+        return tmp;
     }
 }
 
@@ -70,22 +70,14 @@ function translateContent() {
 
 // load a configuration map from a JSON file
 // use a cb to reload page after file was loaded
-function loadMap(file, cb) {
+function loadMap(file) {
     var map = new Map()
     $.getJSON(file, function(json) {
         $.each(json, function (key, value) {
             map.set(key, value)
         });
-    }).done(cb);
+    });
     return map;
-}
-
-// small wrapper to force reload on content loading
-function loader() {
-    received++;
-    if (received >= 2) {
-        translateContent()
-    }
 }
 
 // retrieve a GET parameter
