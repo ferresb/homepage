@@ -1,3 +1,6 @@
+// define default language to use
+const defaultLang = 'english'
+
 // load language files
 let french = loadMap("/lang/french.json");
 let english = loadMap("/lang/english.json");
@@ -28,11 +31,11 @@ function translateContentAndQuit() {
     // closeSidenav();
 }
 
-// retrieve current languages from GET, or define it to english as it will be translated once on loading
+// retrieve current languages from GET, or use default value
 function getLang() {
     var tmp = getParameter('lang');
     if (tmp == null) {
-        return 'english';
+        return defaultLang;
     } else {
         return tmp;
     }
@@ -45,26 +48,39 @@ function changeLang(lang) {
 
 // translate the content of the actual page, using placeholders
 function translateContent() {
-    const flagsToTranslate = document.querySelectorAll('[img-translate]');
+    curLang = changeLang(curLang);
+    translateAll(curLang);
+}
+
+function translateAll(newLang) {
     const elementsToTranslate = document.querySelectorAll('[data-translate]');
-
-    const oldLang = curLang;
-    curLang = changeLang(curLang)
-
     for (const element of elementsToTranslate) {
         const myId = element.getAttribute('id')
-        var translation = translations.get(curLang).get(myId);
-        if (translation != null) element.innerText = translation
+        var translation = translations.get(newLang).get(myId);
+        if (translation != null) element.innerText = translation;
+    }
+    translateLinks(newLang);
+    translateImage(newLang);
+}
+
+function translateImage(newLang) {
+    const flagsToTranslate = document.querySelectorAll('[img-translate]');
+    for (const flag of flagsToTranslate) {
+        flag.src = "images/" + flags.get(newLang);
+    }
+}
+
+function translateLinks(newLang) {
+    const elementsToTranslate = document.querySelectorAll('[data-translate]');
+    const oldLang = changeLang(newLang)
+    for (const element of elementsToTranslate) {
         if (element.href != null & element.href != "") {
             if (element.href.includes("?lang")) {
-                element.href = element.href.replace("?lang=" + oldLang, "?lang=" + curLang)
+                element.href = element.href.replace("?lang=" + oldLang, "?lang=" + newLang)
             } else {
-                element.href = element.href + "?lang=" + curLang
+                element.href = element.href + "?lang=" + newLang
             }
         }
-    }
-    for (const flag of flagsToTranslate) {
-        flag.src = "images/" + flags.get(curLang);
     }
 }
 
@@ -76,8 +92,12 @@ function loadMap(file) {
         $.each(json, function (key, value) {
             map.set(key, value)
         });
-    });
+    }).done(onLoad);
     return map;
+}
+
+function onLoad() {
+    translateAll(curLang);
 }
 
 // retrieve a GET parameter
