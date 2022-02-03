@@ -3,10 +3,11 @@ import argparse
 import re
 import json
 
-flag    = "data-translate"
-TPE     = {"span", "link", "item", "pin"}
-pattern = re.compile('{{[^}]*}}')
-langPH  = "__LANGUAGE__"
+flag        = "data-translate"
+TPE         = {"span", "link", "item", "pin"}
+pattern     = re.compile('{{[^}]*}}')
+langPH      = "__LANGUAGE__"
+LINK_OUT    = "target=\"_blank\" rel=\"noopener noreferrer\""
 
 class PlaceHolder:
     def __init__(self, url, config, string):
@@ -30,6 +31,7 @@ class PlaceHolder:
         self.cls    = findValue("class")
         self.color  = findValue("color", "blue")
         self.url    = url.split("/")[-1]
+        self.out    = True if findValue("out") != None else False
         try:
             self.text   = config[self.id].encode('utf-8')
         except:
@@ -45,14 +47,15 @@ class PlaceHolder:
         tmpLink     = " href=\"" + self.link + "\"" if self.link else ""
         tmpText     = self.text.replace("\n", "<br/>") if self.text else ""
         baseEntry   = "<span {}{}{}>{}</span>".format(flag, tmpId, tmpClass, tmpText)
+        linkOut     = LINK_OUT if self.out else ""
         if self.tpe == "pin":
             return "<i class=\"material-icons {}-text\">blur_circular</i>".format(self.color)
         if self.tpe == "span":
             return baseEntry
         if self.link == self.url:
-            linkEntry   = "<a {}{}{}>{}</a>".format(flag, tmpId, tmpClass, tmpText)
+            linkEntry   = "<a {}{}{}{}>{}</a>".format(flag, tmpId, tmpClass, linkOut, tmpText)
         else: 
-            linkEntry   = "<a {}{}{}{}>{}</a>".format(flag, tmpId, tmpLink, tmpClass, tmpText)
+            linkEntry   = "<a {}{}{}{}{}>{}</a>".format(flag, tmpId, tmpLink, tmpClass, linkOut, tmpText)
         if self.tpe == "link":
             if self.link == self.url:
                 return linkEntry
