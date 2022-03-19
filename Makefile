@@ -1,6 +1,6 @@
 # vim: noexpandtab
 
-LANGUAGE	?= french
+LANGUAGE	?= english
 COLOR		?= green
 
 SRC_DIR 	:= .
@@ -31,12 +31,15 @@ PRIVATETARGET	:= $(TARGET_DIR)/$(PRIVATEFOLDER)
 
 .PHONY: all clean $(TARGET_DIR)
 
-all: $(TARGET_DIR)/index.html $(TARGET_DIR)/publications.html $(TARGET_DIR)/teaching.html $(TARGET_DIR)/personal.html $(TARGET_DIR)/soutenance.html $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) $(PRIVATETARGET) $(TARGET_DIR)/portfolio.pdf $(TARGET_DIR)/thesis.pdf $(TARGET_DIR)/slides.pdf $(TARGET_DIR)/CV_FerresBruno.pdf
+all: $(TARGET_DIR)/index.html $(TARGET_DIR)/publications.html $(TARGET_DIR)/teaching.html $(TARGET_DIR)/personal.html $(TARGET_DIR)/soutenance.html $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) $(PRIVATETARGET) $(TARGET_DIR)/portfolio.pdf $(TARGET_DIR)/thesis.pdf $(TARGET_DIR)/slides.pdf $(TARGET_DIR)/CV_FerresBruno.pdf $(TARGET_DIR)/resume_francais.pdf
 
 $(TARGET_DIR)/soutenance.html: $(HTML_DIR)/soutenance.html
 	@cp $< $@
 
 $(TARGET_DIR)/portfolio.pdf: portfolio.pdf
+	@cp --preserve=links $< $@
+
+$(TARGET_DIR)/resume_francais.pdf: resume_francais.pdf
 	@cp --preserve=links $< $@
 
 $(TARGET_DIR)/slides.pdf: slides.pdf
