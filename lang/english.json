@@ -6,7 +6,7 @@
     "myTeaching": "Teaching",
     "myPersonal": "Personal",
     "myAbout": "About",
-    "myDefense": "PhD Defense",
+    "myDefense": "Details on my PhD",
     "myHereLink": "here",
     "myResume": "My resume",
     "myCode": "Sources are available",
@@ -45,5 +45,13 @@
     "myEnsimagClasses": "Basics on computer architectures and digital design\nProcessor programming (MIPS/RISC-V assembly)\nC programming project (building a graphic library).",
     "myPolytechClasses": "UNIX project: how to use the system primitives to program a mail Client through explicit synchronization.",
     "myPersonalTitle": "Personal",
-    "myTODO": "Whoops... There is nothing here !"
+    "myTODO": "Whoops... There is nothing here !",
+    "myNow": "now",
+    "myExperience": "Professional Experience",
+    "myPostDocShort": "Post doctoral searcher\nFormal verification of electrical rules at transistor level",
+    "myPhDShort": "PhD Thesis\nHardware Construction Language based design methodology for FPGA circuits",
+    "myMonths": "months",
+    "myEdifixio": "End of Study Project (internship)\nWeb security",
+    "myGermany": "Germany",
+    "mySAP": "Engineering internship\nData science"
 }

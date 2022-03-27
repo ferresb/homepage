@@ -6,7 +6,7 @@
     "myTeaching": "Enseignements",
     "myPersonal": "Personnel",
     "myAbout": "À propos",
-    "myDefense": "Soutenance de thèse",
+    "myDefense": "Informations sur ma thèse",
     "myResume": "Mon CV (en anglais)",
     "myHereLink": "ici",
     "myCode": "Les sources sont disponibles",
@@ -45,5 +45,13 @@
     "myEnsimagClasses": "Architecture: circuits numériques et éléments d'architecture\nExploitation des processeurs (assembleurs MIPS & RISC-V)\nProgrammation en C (projet de conception d'une bibliothèque graphique).",
     "myPolytechClasses": "Projet UNIX: utilisation de primitives systèmes pour concevoir un client de messagerie basé sur une synchronisation explicite.",
     "myPersonalTitle": "Personnel",
-    "myTODO": "Oups... Il n'y a rien pour l'instant!"
+    "myTODO": "Oups... Il n'y a rien pour l'instant!",
+    "myNow": "maintenant",
+    "myExperience": "Expérience Professionelle",
+    "myPostDocShort": "Chercheur post-doctoral\nVérification formelles de règles électriques au niveau transistor",
+    "myPhDShort": "Thèse de doctorat\nMéthodologie de conception de circuits pour FPGA basée sur le paradigme de construction matérielle",
+    "myMonths": "mois",
+    "myEdifixio": "Projet de Fin d'Etude\nSécurité Web",
+    "myGermany": "Allemagne",
+    "mySAP": "Stage Assistant Ingénieur\nData science"
 }
