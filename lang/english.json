@@ -1,6 +1,6 @@
 {
     "myIndexTitle": "Homepage",
-    "myJob": "PhD candidate at Univ. Grenoble Alpes",
+    "myJob": "Post Doc at ENS Lyon",
     "myHome": "Home",
     "myPublications": "Publications",
     "myTeaching": "Teaching",
@@ -53,5 +53,6 @@
     "myMonths": "months",
     "myEdifixio": "End of Study Project (internship)\nWeb security",
     "myGermany": "Germany",
-    "mySAP": "Engineering internship\nData science"
+    "mySAP": "Engineering internship\nData science",
+    "myMatooma": "Internship & fixed-term job\nWeb development and database management"
 }

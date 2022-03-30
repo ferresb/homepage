@@ -1,6 +1,6 @@
 {
     "myIndexTitle": "Page d'accueil",
-    "myJob": "Doctorant à l'Université Grenoble Alpes",
+    "myJob": "Post Doc à l'ENS de Lyon",
     "myHome": "Accueil",
     "myPublications": "Publications",
     "myTeaching": "Enseignements",
@@ -53,5 +53,6 @@
     "myMonths": "mois",
     "myEdifixio": "Projet de Fin d'Etude\nSécurité Web",
     "myGermany": "Allemagne",
-    "mySAP": "Stage Assistant Ingénieur\nData science"
+    "mySAP": "Stage Assistant Ingénieur\nData science",
+    "myMatooma": "Stage et CDD\nDéveloppement Web, gestion de base de donnée"
 }
