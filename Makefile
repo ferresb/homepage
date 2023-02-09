@@ -29,9 +29,13 @@ CONFIGTARGET	:= $(TARGET_DIR)/$(CONFIGFOLDER)
 PRIVATEFOLDER	:= private
 PRIVATETARGET	:= $(TARGET_DIR)/$(PRIVATEFOLDER)
 
-.PHONY: all clean $(TARGET_DIR)
+.PHONY: all clean $(TARGET_DIR) required
 
-all: $(TARGET_DIR)/index.html $(TARGET_DIR)/publications.html $(TARGET_DIR)/teaching.html $(TARGET_DIR)/personal.html $(TARGET_DIR)/soutenance.html $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) $(PRIVATETARGET) $(TARGET_DIR)/portfolio.pdf $(TARGET_DIR)/slides.pdf $(TARGET_DIR)/CV_FerresBruno.pdf
+all: required $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) $(PRIVATETARGET) 
+
+required: $(TARGET_DIR)/index.html $(TARGET_DIR)/publications.html $(TARGET_DIR)/teaching.html $(TARGET_DIR)/personal.html $(TARGET_DIR)/soutenance.html
+
+optional: $(TARGET_DIR)/portfolio.pdf $(TARGET_DIR)/slides.pdf $(TARGET_DIR)/CV_FerresBruno.pdf
 
 $(TARGET_DIR)/soutenance.html: $(HTML_DIR)/soutenance.html
 	@cp $< $@
@@ -54,6 +58,20 @@ $(TARGET_DIR)/%.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)/%.
 	@cat $(HTML_DIR)/$*.html 	>> 	$@
 	@cat $(FOOTER) 				>> 	$@
 	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language $(LANGUAGE) --color $(COLOR)
+
+$(TARGET_DIR)/%_en.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)/%.html
+	@cat $(HEADER) 				> 	$@
+	@cat $(NAVBAR) 				>> 	$@
+	@cat $(HTML_DIR)/$*.html 	>> 	$@
+	@cat $(FOOTER) 				>> 	$@
+	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language english --color $(COLOR)
+
+$(TARGET_DIR)/%_fr.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)/%.html
+	@cat $(HEADER) 				> 	$@
+	@cat $(NAVBAR) 				>> 	$@
+	@cat $(HTML_DIR)/$*.html 	>> 	$@
+	@cat $(FOOTER) 				>> 	$@
+	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language french --color $(COLOR)
 
 $(TARGET_DIR):
 	@mkdir -p $@

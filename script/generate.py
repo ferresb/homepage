@@ -36,7 +36,7 @@ class PlaceHolder:
             self.text   = config[self.id].encode('utf-8')
         except:
             self.text   = None
-        
+
 
     def toString(self):
         return "tpe: {}, id: {}, link: {}, class: {}".format(self.tpe, self.id, self.link, self.cls)
@@ -45,7 +45,7 @@ class PlaceHolder:
         tmpId       = " id=\"" + self.id + "\"" if self.id else ""
         tmpClass    = " class=\"" + self.cls + "\"" if self.cls else ""
         tmpLink     = " href=\"" + self.link + "\"" if self.link else ""
-        tmpText     = self.text.replace("\n", "<br/>") if self.text else ""
+        tmpText     = self.text.decode('utf8').replace("\n", "<br/>") if self.text else ""
         baseEntry   = "<span {}{}{}>{}</span>".format(flag, tmpId, tmpClass, tmpText)
         linkOut     = LINK_OUT if self.out else ""
         if self.tpe == "pin":
@@ -54,7 +54,7 @@ class PlaceHolder:
             return baseEntry
         if self.link == self.url:
             linkEntry   = "<a {}{}{}{}>{}</a>".format(flag, tmpId, tmpClass, linkOut, tmpText)
-        else: 
+        else:
             linkEntry   = "<a {}{}{}{}{}>{}</a>".format(flag, tmpId, tmpLink, tmpClass, linkOut, tmpText)
         if self.tpe == "link":
             if self.link == self.url:
@@ -83,12 +83,12 @@ def replace(args):
     f.close()
     for i in range(0, len(srcLines)):
         for p in pattern.finditer(srcLines[i]):
-            ph = PlaceHolder(args.src, config, p.group().replace("{{", "").replace("}}", "")) 
+            ph = PlaceHolder(args.src, config, p.group().replace("{{", "").replace("}}", ""))
             srcLines[i] = srcLines[i].replace(p.group(), ph.buildEntry())
     f = open(args.dest, 'w')
     for line in srcLines:
         f.write(line.replace(langPH, switchLang(args)))
-    f.close()     
+    f.close()
 
 parser = argparse.ArgumentParser(description='Generate a web page from the templating system.')
 parser.add_argument('src', metavar='source', type=str, help='The source file to use.')
