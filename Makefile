@@ -59,20 +59,6 @@ $(TARGET_DIR)/%.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)/%.
 	@cat $(FOOTER) 				>> 	$@
 	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language $(LANGUAGE) --color $(COLOR)
 
-$(TARGET_DIR)/%_en.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)/%.html
-	@cat $(HEADER) 				> 	$@
-	@cat $(NAVBAR) 				>> 	$@
-	@cat $(HTML_DIR)/$*.html 	>> 	$@
-	@cat $(FOOTER) 				>> 	$@
-	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language english --color $(COLOR)
-
-$(TARGET_DIR)/%_fr.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)/%.html
-	@cat $(HEADER) 				> 	$@
-	@cat $(NAVBAR) 				>> 	$@
-	@cat $(HTML_DIR)/$*.html 	>> 	$@
-	@cat $(FOOTER) 				>> 	$@
-	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language french --color $(COLOR)
-
 $(TARGET_DIR):
 	@mkdir -p $@
 
