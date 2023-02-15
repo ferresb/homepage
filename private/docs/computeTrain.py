@@ -1,1 +1,0 @@
-/home/pi/docs/computeTrain.py

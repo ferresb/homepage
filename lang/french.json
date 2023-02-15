@@ -67,6 +67,7 @@
     "myResearchProjectTodo": "Plus di'nformations à venir...",
     "myStaticAnalysis": "Analyse statique",
     "myInternationalReviews": "Revues internationales",
-    "myTODAESStatus": "<b><u>Soumis</u></b> au journal ACM Transactions on Design Automation of Electronic Systems (TODAES). En cours de révision majeure depuis le 21 janvier 2023.",
+    "mySubmitted": "Soumis",
+    "myTODAESStatus": "au journal ACM Transactions on Design Automation of Electronic Systems (TODAES). En cours de révision majeure depuis le 21 janvier 2023.",
     "myDate2023": "Papier court (2 pages) et poster"
 }

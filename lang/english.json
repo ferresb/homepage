@@ -67,6 +67,7 @@
     "myResearchProjectTodo": "More information will be provided soon...",
     "myStaticAnalysis": "Static Analysis",
     "myInternationalReviews": "International Reviews",
-    "myTODAESStatus": "<b><u>Submitted</u></b> to ACM Transactions on Design Automation of Electronic Systems (TODAES). Under major revision since 21 January 2023.",
+    "mySubmitted": "Submitted",
+    "myTODAESStatus": "to ACM Transactions on Design Automation of Electronic Systems (TODAES). Under major revision since 21 January 2023.",
     "myDate2023": "Short paper (2 pages) and poster"
 }
