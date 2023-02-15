@@ -63,11 +63,12 @@
     "myMatooma": "Web development and database management",
     "myLastUpdate": "Last update on 15 february 2023",
     "myResearchProjectTitle": "Research Project",
-    "myResearchProject": "My research project focus on using <b>high level tools and methods</b> from the software world in the context of digital design.",
+    "myResearchProject": "My research project focus on conceiving and adapting high level tools and methods for digital design.",
     "myResearchProjectTodo": "More information will be provided soon...",
     "myStaticAnalysis": "Static Analysis",
     "myInternationalReviews": "International Reviews",
     "mySubmitted": "Submitted",
     "myTODAESStatus": "to ACM Transactions on Design Automation of Electronic Systems (TODAES). Under major revision since 21 January 2023.",
-    "myDate2023": "Short paper (2 pages) and poster"
+    "myDate2023": "Short paper (2 pages) and poster",
+    "myENSClasses": "C programming: preparing students for the practical part of the 'agregation' in Computer Sciences (exam to teach in highschool and preparatory classes)"
 }
