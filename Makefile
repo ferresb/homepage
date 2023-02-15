@@ -26,16 +26,13 @@ IMAGETARGET	:= $(TARGET_DIR)/$(IMAGEFOLDER)
 CONFIGFOLDER	:= $(CONFIG_DIR)
 CONFIGTARGET	:= $(TARGET_DIR)/$(CONFIGFOLDER)
 
-PRIVATEFOLDER	:= private
-PRIVATETARGET	:= $(TARGET_DIR)/$(PRIVATEFOLDER)
-
 .PHONY: all clean $(TARGET_DIR) required
 
-all: required $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) $(PRIVATETARGET) 
+all: required $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) documents 
 
 required: $(TARGET_DIR)/index.html $(TARGET_DIR)/publications.html $(TARGET_DIR)/teaching.html $(TARGET_DIR)/personal.html $(TARGET_DIR)/soutenance.html
 
-optional: $(TARGET_DIR)/portfolio.pdf $(TARGET_DIR)/slides.pdf $(TARGET_DIR)/CV_FerresBruno.pdf
+documents: $(TARGET_DIR)/portfolio.pdf $(TARGET_DIR)/slides.pdf $(TARGET_DIR)/CV_FerresBruno.pdf
 
 $(TARGET_DIR)/soutenance.html: $(HTML_DIR)/soutenance.html
 	@cp $< $@
@@ -76,10 +73,6 @@ $(IMAGETARGET): $(SRC_DIR)/$(IMAGEFOLDER)
 	@cp -r $< $@
 
 $(CONFIGTARGET): $(SRC_DIR)/$(CONFIGFOLDER)
-	@rm -rf $@
-	@cp -r $< $@
-
-$(PRIVATETARGET): $(SRC_DIR)/$(PRIVATEFOLDER)
 	@rm -rf $@
 	@cp -r $< $@
 
