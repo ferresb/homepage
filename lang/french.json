@@ -61,5 +61,12 @@
     "mySAP": "Data science",
     "myMatoomaTitle": "Stage et CDD",
     "myMatooma": "Développement Web, gestion de base de donnée",
-    "myLastUpdate": "Dernière mise à jour le 15 février 2023"
+    "myLastUpdate": "Dernière mise à jour le 15 février 2023",
+    "myResearchProjectTitle": "Projet de recherche", 
+    "myResearchProject": "Mon projet de recherche s'intéresse à l'utilisation de <b>méthodes et outils de haut niveau</b> pour la conception numérique.",
+    "myResearchProjectTodo": "Plus di'nformations à venir...",
+    "myStaticAnalysis": "Analyse statique",
+    "myInternationalReviews": "Revues internationales",
+    "myTODAESStatus": "<b><u>Soumis</u></b> au journal ACM Transactions on Design Automation of Electronic Systems (TODAES). En cours de révision majeure depuis le 21 janvier 2023.",
+    "myDate2023": "Papier court (2 pages) et poster"
 }
