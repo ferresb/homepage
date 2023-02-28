@@ -19,6 +19,7 @@ JSTARGET	:= $(TARGET_DIR)/$(JSFOLDER)
 
 CSSFOLDER	:= css
 CSSTARGET	:= $(TARGET_DIR)/$(CSSFOLDER)
+CSSSRC		:= $(wildcard $(SRC_DIR)/$(CSSFOLDER)/*.css)
 
 IMAGEFOLDER	:= images
 IMAGETARGET	:= $(TARGET_DIR)/$(IMAGEFOLDER)
@@ -65,7 +66,7 @@ $(JSTARGET): $(SRC_DIR)/$(JSFOLDER)
 	@cp -r $< $@
 	@sed -i s/"defaultLang = 'english'"/"defaultLang = '$(LANGUAGE)'"/g $(JSTARGET)/custom.js
 
-$(CSSTARGET): $(SRC_DIR)/$(CSSFOLDER)
+$(CSSTARGET): $(SRC_DIR)/$(CSSFOLDER) $(CSSSRC)
 	@rm -rf $@
 	@cp -r $< $@
 

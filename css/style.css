@@ -9,5 +9,10 @@ main {
 }
 
 .right {
-    align: right
+    align: right;
+}
+
+li.myitem{
+    list-style-type: square!important;
+    margin: 0% 0% 0% 3%;
 }
