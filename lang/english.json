@@ -73,5 +73,10 @@
     "mySubmitted": "Submitted",
     "myTODAESStatus": "to ACM Transactions on Design Automation of Electronic Systems (TODAES). Under major revision since 21 January 2023.",
     "myDate2023": "Short paper (2 pages) and poster",
-    "myENSClasses": "C programming: preparing students for the practical part of the 'agregation' in Computer Sciences (exam to teach in highschool and preparatory classes)"
+    "myENSClasses": "C programming: preparing students for the practical part of the 'agregation' in Computer Sciences (exam to teach in highschool and preparatory classes)",
+    "myArchi2023Title": "Thematic School - Archi 2023",
+    "myMarch": "March",
+    "myArchi2023Lecture": "Introduction lecture to Chisel, and the concept of Hardware Construction Language.",
+    "myArchi2023Volume": "Lecture: 1h\nPractical works: 2h",
+    "myWebsite": "Website:"
 }

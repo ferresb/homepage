@@ -73,5 +73,11 @@
     "mySubmitted": "Soumis",
     "myTODAESStatus": "au journal ACM Transactions on Design Automation of Electronic Systems (TODAES). En cours de révision majeure depuis le 21 janvier 2023.",
     "myDate2023": "Papier court (2 pages) et poster",
-    "myENSClasses": "Programmation en C: préparation des étudiant·es à l'épreuve de programmation de l'agrégation d'informatique."
+    "myENSClasses": "Programmation en C: préparation des étudiant·es à l'épreuve de programmation de l'agrégation d'informatique.",
+    "myArchi2023Title": "Ecole thématique - Archi 2023",
+    "myMarch": "mars",
+    "myArchi2023Lecture": "Cours d'introduction à Chisel, et au concept de langage de construction matérielle en général.",
+    "myArchi2023Volume": "Cours magistral: 1h\nTravaux pratique: 2h",
+    "myWebsite": "Site:"
+
 }
