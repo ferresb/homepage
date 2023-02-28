@@ -5,7 +5,7 @@ COLOR		?= green
 
 SRC_DIR 	:= .
 HTML_DIR	:= html
-TARGET_DIR	:= target
+TARGET_DIR	:= htdocs
 CONFIG_DIR	:= lang
 
 SCRIPT 		:= script/generate.py
