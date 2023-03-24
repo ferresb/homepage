@@ -61,7 +61,7 @@
     "mySAP": "Data science",
     "myMatoomaTitle": "Internship & fixed-term job",
     "myMatooma": "Web development and database management",
-    "myLastUpdate": "Last update on 28 february 2023",
+    "myLastUpdate": "Last update on 24 march 2023",
     "myResearchProjectTitle": "Research Project",
     "myResearchProject": "My research project focus on conceiving and adapting high level tools and methods for digital design. More practically, I want to use my expertise about Chisel and formal methods to provide more efficient flows to design circuits, and better tools to analyze them.",
     "myResearchProjectIntr": "In order to do so, I focus on 3 complementary directions, which all revolves around circuit design and verification:", 
@@ -74,9 +74,14 @@
     "myDate2023": "Short paper (2 pages) and poster",
     "myENSClasses": "C programming: preparing students for the practical part of the 'agregation' in Computer Sciences (exam to teach in highschool and preparatory classes)",
     "myArchi2023Title": "Thematic School - Archi 2023",
+    "myArchi2023Slides": "The slides of the lecture are available",
+    "myArchi2023Sources": "Sources will be available soon.",
     "myMarch": "March",
     "myArchi2023Lecture": "Introduction lecture to Chisel, and the concept of Hardware Construction Language.",
-    "myArchi2023Volume": "Lecture: 1h\nPractical works: 2h",
+    "myArchi2023Volume": "Lecture: 1h30\nPractical works: 1h30",
     "myWebsite": "Website:",
-    "myQualif": "I am qualified by the CNU in the section 27 (Computer Sciences), which means I can be appointed as Associate Professor in France."
+    "myArchiWebsite": "Website of the event:",
+    "myQualif": "I am qualified by the CNU in the section 27 (Computer Sciences), which means I can be appointed as Associate Professor in France.",
+    "myObfuscatedMail": "bruno[dot]ferres[at]inria[dot]fr",
+    "myENSDebugLesson": "Practical works on GDB usage for C programming."
 }

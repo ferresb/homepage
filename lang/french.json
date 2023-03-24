@@ -61,7 +61,7 @@
     "mySAP": "Data science",
     "myMatoomaTitle": "Stage et CDD",
     "myMatooma": "Développement Web, gestion de base de donnée",
-    "myLastUpdate": "Dernière mise à jour le 28 février 2023",
+    "myLastUpdate": "Dernière mise à jour le 24 mars 2023",
     "myResearchProjectTitle": "Projet de recherche", 
     "myResearchProject": "Mon projet de recherche s'intéresse à la création et l'adaptation de méthodes et outils de haut niveau pour la conception numérique. En pratique, je souhaite utiliser mon expertise en Chisel et en méthodes formelles pour proposer des outils et méthodes de conception plus efficaces, et de meilleurs outils pour les analyser.",
     "myResearchProjectIntr": "Pour ce faire, je m'intéresse principalement à trois axes complémentaires, qui tournent tous autour de la conception de circuits numérique et leur vérification :",
@@ -76,7 +76,12 @@
     "myArchi2023Title": "Ecole thématique - Archi 2023",
     "myMarch": "mars",
     "myArchi2023Lecture": "Cours d'introduction à Chisel, et au concept de langage de construction matérielle en général.",
-    "myArchi2023Volume": "Cours magistral: 1h\nTravaux pratique: 2h",
-    "myWebsite": "Site:",
-    "myQualif": "Je suis qualifié en section 27 (informatique) du CNU, ce qui m'autorise à concourir pour les postes de Maître de Conférence en France."
+    "myArchi2023Slides": "Le support du cours est disponible",
+    "myArchi2023Sources": "Les sources seront bientôt disponibles.",
+    "myArchi2023Volume": "Cours magistral: 1h30\nTravaux pratique: 1h30",
+    "myWebsite": "Site :",
+    "myArchiWebsite": "Site de l'évenement :",
+    "myQualif": "Je suis qualifié en section 27 (informatique) du CNU, ce qui m'autorise à concourir pour les postes de Maître de Conférence en France.",
+    "myObfuscatedMail": "bruno[point]ferres[arobase]inria[point]fr",
+    "myENSDebugLesson": "Travaux pratiques sur l'utilisation de GDB pour la programmation en C."
 }
