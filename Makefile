@@ -45,6 +45,7 @@ documents: $(TARGET_DIR)/portfolio.pdf \
 	$(TARGET_DIR)/slides.pdf \
 	$(TARGET_DIR)/CV_FerresBruno.pdf \
 	$(TARGET_DIR)/Lecture_Chisel_Archi23.pdf \
+	$(TARGET_DIR)/TP_Chisel_Archi23.tar.gz \
 	$(TARGET_DIR)/gdb_C_lab.tar.gz
 
 $(TARGET_DIR)/soutenance.html: $(HTML_DIR)/soutenance.html
@@ -63,6 +64,9 @@ $(TARGET_DIR)/CV_FerresBruno.pdf: CV_FerresBruno.pdf
 	@cp --preserve=links $< $@
 
 $(TARGET_DIR)/Lecture_Chisel_Archi23.pdf: Lecture_Chisel_Archi23.pdf
+	@cp --preserve=links $< $@
+
+$(TARGET_DIR)/TP_Chisel_Archi23.tar.gz: TP_Chisel_Archi23.tar.gz
 	@cp --preserve=links $< $@
 
 $(TARGET_DIR)/gdb_C_lab.tar.gz: gdb_C_lab.tar.gz
