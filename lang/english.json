@@ -72,7 +72,7 @@
     "myInternationalReviews": "International Reviews",
     "myTODAESStatus": "Accepted at ACM Transactions on Design Automation of Electronic Systems (TODAES) on 23 March 2023.",
     "myDate2023": "Short paper (2 pages) and poster",
-    "myENSClasses": "C programming: preparing students for the practical part of the 'agregation' in Computer Sciences (exam to teach in highschool and preparatory classes)",
+    "myENSClasses": "C and OCaml programming: preparing students for the practical part of the 'agregation' in Computer Sciences (exam to teach in highschool and preparatory classes)",
     "myArchi2023Title": "Thematic School - Archi 2023",
     "myArchi2023Slides": "The slides of the lecture are available",
     "myArchi2023Sources": "Sources for the practical lab are available",
@@ -83,5 +83,7 @@
     "myArchiWebsite": "Website of the event:",
     "myQualif": "I am qualified by the CNU in the section 27 (Computer Sciences), which means I can be appointed as Associate Professor in France.",
     "myObfuscatedMail": "bruno[dot]ferres[at]inria[dot]fr",
-    "myENSDebugLesson": "Practical works on GDB usage for C programming."
+    "myENSDebugLesson": "Practical works on GDB usage for C programming.",
+    "myTODAESAuthorVersion": "Author version on ArXiV",
+    "myAuthorVersion": "Author version"
 }

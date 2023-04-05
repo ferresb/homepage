@@ -72,7 +72,7 @@
     "myInternationalReviews": "Revues internationales",
     "myTODAESStatus": "Accepté à la publication dans le journal ACM Transactions on Design Automation of Electronic Systems (TODAES) le 23 mars 2023.",
     "myDate2023": "Papier court (2 pages) et poster",
-    "myENSClasses": "Programmation en C: préparation des étudiant·es à l'épreuve de programmation de l'agrégation d'informatique.",
+    "myENSClasses": "Programmation en C et en OCaml: préparation des étudiant·es à l'épreuve de programmation de l'agrégation d'informatique.",
     "myArchi2023Title": "Ecole thématique - Archi 2023",
     "myMarch": "mars",
     "myArchi2023Lecture": "Cours d'introduction à Chisel, et au concept de langage de construction matérielle en général.",
@@ -83,5 +83,7 @@
     "myArchiWebsite": "Site de l'évenement :",
     "myQualif": "Je suis qualifié en section 27 (informatique) du CNU, ce qui m'autorise à concourir pour les postes de Maître de Conférence en France.",
     "myObfuscatedMail": "bruno[point]ferres[arobase]inria[point]fr",
-    "myENSDebugLesson": "Travaux pratiques sur l'utilisation de GDB pour la programmation en C."
+    "myENSDebugLesson": "Travaux pratiques sur l'utilisation de GDB pour la programmation en C.",
+    "myTODAESAuthorVersion": "Version auteur sur ArXiV",
+    "myAuthorVersion": "Version auteur"
 }
