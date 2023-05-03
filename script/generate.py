@@ -4,10 +4,19 @@ import re
 import json
 
 flag        = "data-translate"
-TPE         = {"span", "link", "item", "pin"}
+TPE         = {"span", "link", "item", "pin", "domain", "me"}
 pattern     = re.compile('{{[^}]*}}')
 langPH      = "__LANGUAGE__"
 LINK_OUT    = "target=\"_blank\" rel=\"noopener noreferrer\""
+
+DOMAINS = {
+    "FPGA": "green",
+    "DSE": "blue",
+    "ERC": "red",
+    "MC": "purple"
+}
+
+GOOGLE_SCHOLAR="https://scholar.google.fr/citations?user=x7_S3xAAAAAJ&hl=fr"
 
 class PlaceHolder:
     def __init__(self, url, config, string):
@@ -52,6 +61,10 @@ class PlaceHolder:
             return "<i class=\"material-icons {}-text\">blur_circular</i>".format(self.color)
         if self.tpe == "span":
             return baseEntry
+        if self.tpe == "me":
+            return "<a target=\"_blank\" rel=\"noopener noreferer\" href={} style=\"color: black\"><u>Bruno Ferres</u></a>".format(GOOGLE_SCHOLAR)
+        if self.tpe == "domain":
+            return "<b style=\"color: {}\">{}</b>".format(DOMAINS[self.id], self.id)
         if self.link == self.url:
             linkEntry   = "<a {}{}{}{}>{}</a>".format(flag, tmpId, tmpClass, linkOut, tmpText)
         else:

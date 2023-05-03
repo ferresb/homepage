@@ -68,7 +68,7 @@
     "myResearchProjectAxe1": "Je souhaite améliorer les approches existantes pour analyser un circuit, avec un intérêt particulier sur la vérification de propriétés sur des générateurs de circuits décrits en Chisel.",
     "myResearchProjectAxe2": "Je veux permettre d'utiliser Chisel dans des cas d'usage industriels, en permettant l'intégration de composés écrits en Chisel avec des composants décrits grâce à d'autres paradigme de conception, comme la synthèse de haut niveau (HLS). En pratique, je souhaite proposer un environnement de développement pour compiler efficacement des noyaux de calculs décrits dans les paradigmes différents au sein d'un seul circuit. Cela signifie également s'intéresser aux interfaces entre ces différents kernels.",
     "myResearchProjectAxe3": "Je souhaite améliorer les flots de conception existants, notamment en intégrant les fonctionnalités de génération fournies par les langages de construction matérielle.",
-    "myStaticAnalysis": "Analyse statique",
+    "myModelChecking": "Model Checking",
     "myInternationalReviews": "Revues internationales",
     "myTODAESStatus": "Accepté à la publication dans le journal ACM Transactions on Design Automation of Electronic Systems (TODAES) le 23 mars 2023.",
     "myDate2023": "Papier court (2 pages) et poster",

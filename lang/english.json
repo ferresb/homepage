@@ -68,7 +68,7 @@
     "myResearchProjectAxe1": "I want to improve the methods and tools to analyze a design, with a particular focus on how one can verify circuits generator written in Chisel.",
     "myResearchProjectAxe2": "I want to enable the use of Chisel in industrial usecases, by allowing the integration of Chisel-based components along with components described using a different design paradigm, such as High Level Synthesis (HLS). More practically, I want to provide a framework to efficiently compile hardware kernels written with different paradigms, and integrate them in a single top level circuit, which means providing a way to interface them.",
     "myResearchProjectAxe3": "I want to improve existing design flows, using the generation capabilities provided by hardware construction languages.",
-    "myStaticAnalysis": "Static Analysis",
+    "myModelChecking": "Model Checking",
     "myInternationalReviews": "International Reviews",
     "myTODAESStatus": "Accepted at ACM Transactions on Design Automation of Electronic Systems (TODAES) on 23 March 2023.",
     "myDate2023": "Short paper (2 pages) and poster",
