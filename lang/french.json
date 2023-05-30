@@ -2,7 +2,9 @@
     "myIndexTitle": "Page d'accueil",
     "myJob": "Post Doc au LIP (Lyon)",
     "myHome": "Accueil",
+    "myCurriculum": "Formation",
     "myPublications": "Publications",
+    "mySoftware": "Logiciels",
     "myTeaching": "Enseignements",
     "myPersonal": "Personnel",
     "myAbout": "À propos",
@@ -61,7 +63,6 @@
     "mySAP": "Data science",
     "myMatoomaTitle": "Stage et CDD",
     "myMatooma": "Développement Web, gestion de base de donnée",
-    "myLastUpdate": "Dernière mise à jour le 24 mars 2023",
     "myResearchProjectTitle": "Projet de recherche", 
     "myResearchProject": "Mon projet de recherche s'intéresse à la création et l'adaptation de méthodes et outils de haut niveau pour la conception numérique. En pratique, je souhaite utiliser mon expertise en Chisel et en méthodes formelles pour proposer des outils et méthodes de conception plus efficaces, et de meilleurs outils pour les analyser.",
     "myResearchProjectIntr": "Pour ce faire, je m'intéresse principalement à trois axes complémentaires, qui tournent tous autour de la conception de circuits numérique et leur vérification :",
@@ -85,5 +86,6 @@
     "myObfuscatedMail": "bruno[point]ferres[arobase]inria[point]fr",
     "myENSDebugLesson": "Travaux pratiques sur l'utilisation de GDB pour la programmation en C.",
     "myTODAESAuthorVersion": "Version auteur sur ArXiV",
-    "myAuthorVersion": "Version auteur"
+    "myAuthorVersion": "Version auteur",
+    "myLastUpdate": "Dernière mise à jour le 30 mai 2023"
 }

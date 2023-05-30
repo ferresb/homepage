@@ -2,7 +2,9 @@
     "myIndexTitle": "Homepage",
     "myJob": "Post Doc at LIP, Lyon",
     "myHome": "Home",
+    "myCurriculum": "Curriculum Vitae",
     "myPublications": "Publications",
+    "mySoftware": "Software",
     "myTeaching": "Teaching",
     "myPersonal": "Personal",
     "myAbout": "About",
@@ -61,7 +63,6 @@
     "mySAP": "Data science",
     "myMatoomaTitle": "Internship & fixed-term job",
     "myMatooma": "Web development and database management",
-    "myLastUpdate": "Last update on 24 march 2023",
     "myResearchProjectTitle": "Research Project",
     "myResearchProject": "My research project focus on conceiving and adapting high level tools and methods for digital design. More practically, I want to use my expertise about Chisel and formal methods to provide more efficient flows to design circuits, and better tools to analyze them.",
     "myResearchProjectIntr": "In order to do so, I focus on 3 complementary directions, which all revolves around circuit design and verification:", 
@@ -85,5 +86,6 @@
     "myObfuscatedMail": "bruno[dot]ferres[at]inria[dot]fr",
     "myENSDebugLesson": "Practical works on GDB usage for C programming.",
     "myTODAESAuthorVersion": "Author version on ArXiV",
-    "myAuthorVersion": "Author version"
+    "myAuthorVersion": "Author version",
+    "myLastUpdate": "Last update on 30 may 2023"
 }

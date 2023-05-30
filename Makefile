@@ -36,7 +36,9 @@ CONFIGSOURCES 	:= $(wildcard $(CONFIG_DIR)/*.json)
 all: required $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) documents 
 
 required: $(TARGET_DIR)/index.html \
+	$(TARGET_DIR)/curriculum.html \
 	$(TARGET_DIR)/publications.html \
+	$(TARGET_DIR)/software.html \
 	$(TARGET_DIR)/teaching.html \
 	$(TARGET_DIR)/personal.html \
 	$(TARGET_DIR)/soutenance.html
