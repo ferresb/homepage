@@ -3,7 +3,7 @@
     "myJob": "Post Doc au LIP (Lyon)",
     "myHome": "Accueil",
     "myCurriculum": "Curriculum Vitae",
-    "myPublications": "Publications",
+    "myResearch": "Recherche",
     "mySoftware": "Logiciels",
     "myTeaching": "Enseignements",
     "myPersonal": "Personnel",
@@ -87,5 +87,6 @@
     "myENSDebugLesson": "Travaux pratiques sur l'utilisation de GDB pour la programmation en C.",
     "myTODAESAuthorVersion": "Version auteur sur ArXiV",
     "myAuthorVersion": "Version auteur",
+    "myPublications": "Publications",
     "myLastUpdate": "Dernière mise à jour le 30 mai 2023"
 }

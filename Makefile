@@ -37,29 +37,26 @@ all: required $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) documents
 
 required: $(TARGET_DIR)/index.html \
 	$(TARGET_DIR)/curriculum.html \
-	$(TARGET_DIR)/publications.html \
+	$(TARGET_DIR)/research.html \
 	$(TARGET_DIR)/software.html \
 	$(TARGET_DIR)/teaching.html \
 	$(TARGET_DIR)/personal.html \
-	$(TARGET_DIR)/soutenance.html
+	$(TARGET_DIR)/phd.html
 
 documents: $(TARGET_DIR)/portfolio.pdf \
-	$(TARGET_DIR)/slides.pdf \
+	$(TARGET_DIR)/thesis_slides_FerresBruno.pdf \
 	$(TARGET_DIR)/CV_FerresBruno.pdf \
 	$(TARGET_DIR)/Lecture_Chisel_Archi23.pdf \
 	$(TARGET_DIR)/TP_Chisel_Archi23.tar.gz \
 	$(TARGET_DIR)/gdb_C_lab.tar.gz
 
-$(TARGET_DIR)/soutenance.html: $(HTML_DIR)/soutenance.html
+$(TARGET_DIR)/phd.html: $(HTML_DIR)/phd.html
 	@cp $< $@
 
 $(TARGET_DIR)/portfolio.pdf: portfolio.pdf
 	@cp --preserve=links $< $@
 
-$(TARGET_DIR)/resume_francais.pdf: resume_francais.pdf
-	@cp --preserve=links $< $@
-
-$(TARGET_DIR)/slides.pdf: slides.pdf
+$(TARGET_DIR)/thesis_slides_FerresBruno.pdf: thesis_slides_FerresBruno.pdf
 	@cp --preserve=links $< $@
 
 $(TARGET_DIR)/CV_FerresBruno.pdf: CV_FerresBruno.pdf
