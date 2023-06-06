@@ -30,6 +30,7 @@
     "myAniahSite": "Site web d'Aniah",
     "myProjects": "Projets",
     "myLink": "Lien",
+    "myERCTool": "Prototype logiciel pour l'identification d'erreurs électriques (Electrical Rule Checking, ou ERC) sur des circuits décrits au niveau transistor. Développé durant mon post doctorat, en collaboration avec Oussama Oulkaid, doctorant CIFRE. Le prototype n'est pas disponible en ligne, en accord avec notre partenaire industriel.",
     "myQece": "Prototype logiciel permettant à la fois de définir des méthodologies adaptables d'estimation de circuit numérique, et des processus flexibles d'exploration d'espace de conception.",
     "myQeceBenchmark": "Banc d'applications représentatives de l'utilisation des FPGAs, utilisé pour démontrer l'utilisabilité de QECE sur divers cas d'utilisation.",
     "myHomepage": "Sources de cette page web", 
@@ -44,7 +45,7 @@
     "myLabelResContent": "Ensemble de formations visant à former les doctorant·es au métier d'Enseignant/Chercheur. Un mémoire portant sur cette formation et mon expérience d'enseignement peut être trouvé",
     "myLabelResAdditional": "",
     "myLabelResSite": "Site web du label RES.",
-    "myTeachingExperience": "Expérience d'enseignement",
+    "myTeachingExperience": "Détails",
     "myEnsimagClasses": "Architecture: circuits numériques et éléments d'architecture\nExploitation des processeurs (assembleurs MIPS & RISC-V)\nProgrammation en C (projet de conception d'une bibliothèque graphique).",
     "myPolytechClasses": "Projet UNIX: utilisation de primitives systèmes pour concevoir un client de messagerie basé sur une synchronisation explicite.",
     "myPersonalTitle": "Personnel",
@@ -88,5 +89,11 @@
     "myTODAESAuthorVersion": "Version auteur sur ArXiV",
     "myAuthorVersion": "Version auteur",
     "myPublications": "Publications",
-    "myLastUpdate": "Dernière mise à jour le 30 mai 2023"
+    "myTeachingSummary": "Résumé",
+    "myYear": "Année",
+    "myPlace": "Lieu",
+    "myUE": "Unité d'enseignement",
+    "myVolume": "Volume",
+    "myInCharge": "Responsable(s)",
+    "myLastUpdate": "Dernière mise à jour le 06 juin 2023"
 }

@@ -30,6 +30,7 @@
     "myAniahSite": "Aniah website",
     "myProjects": "Projects",
     "myLink": "Link",
+    "myERCTool": "Software prototype for Electrical Rule Checking (ERC) on integrated circuits at transistor level. Developped with Oussama Oulkaid, CIFRE PhD candidate, during my post doc. Due to the industrial context, the software is not distributed online.",
     "myQece": "Framework which allows the users to define adaptable estimation methodologies for digital circuits, and flexible design space exploration strategies.",
     "myQeceBenchmark": "Benchmark of FPGA representative applications, used to demonstrate the usability of QECE on various use cases.",
     "myHomepage": "Sources of this webpage",
@@ -44,7 +45,7 @@
     "myLabelResContent": "Set of classes which aims to train students to the professor job. A dissertation on this training and on my teaching experience can be found",
     "myLabelResAdditional": " (in French)",
     "myLabelResSite": "Training website (in French).",
-    "myTeachingExperience": "Teaching experience",
+    "myTeachingExperience": "Details",
     "myEnsimagClasses": "Basics on computer architectures and digital design\nProcessor programming (MIPS/RISC-V assembly)\nC programming project (building a graphic library).",
     "myPolytechClasses": "UNIX project: how to use the system primitives to program a mail Client through explicit synchronization.",
     "myPersonalTitle": "Personal",
@@ -88,5 +89,11 @@
     "myTODAESAuthorVersion": "Author version on ArXiV",
     "myAuthorVersion": "Author version",
     "myPublications": "Publications",
-    "myLastUpdate": "Last update on 30 may 2023"
+    "myTeachingSummary": "Summary",
+    "myYear": "Year",
+    "myPlace": "Place",
+    "myUE": "Class",
+    "myVolume": "Hours",
+    "myInCharge": "In charge",
+    "myLastUpdate": "Last update on 06 june 2023"
 }
