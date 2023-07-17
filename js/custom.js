@@ -106,3 +106,29 @@ function getParameter(key) {
     parameterList = new URLSearchParams(address)
     return parameterList.get(key)
 }
+
+function setCollapse() {
+    var btn = document
+        .getElementsByClassName("collapse");
+
+    for (let i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", function () {
+            var content = this.nextSibling;
+            do {
+                if (!content) {
+                    return;
+                }
+                content = content.nextSibling;
+                if (!content) {
+                    return;
+                }
+            } while (content.className != "toCollapse");
+            this.classList.toggle("active");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+}

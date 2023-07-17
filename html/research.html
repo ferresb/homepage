@@ -2,6 +2,7 @@
             <div class="container">
                 </br>
                 <button type="button" class="collapse">{{id="myResearchInterests"}}<i class="small material-icons">arrow_drop_down</i></button>
+                </br>
                 <div class="toCollapse">
                     <center><h5>TODO</h5></center>
                 </div>
@@ -9,6 +10,7 @@
                 <div class="divider"></div>
                 </br>
                 <button type="button" class="collapse">{{id="mySupervisedStudents"}}<i class="small material-icons">arrow_drop_down</i></button>
+                </br>
                 <div class="toCollapse">
                     <center><h5>TODO</h5></center>
                 </div>
@@ -96,23 +98,3 @@
                 </div>
             </div>
         </main>
-        <script>
-            var btn = document
-                .getElementsByClassName("collapse");
-
-            for (let i = 0; i < btn.length; i++) {
-                btn[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var found = false;
-                    var content = this.nextSibling;
-                    while (content.className != "toCollapse"){
-                        content = content.nextSibling;
-                    }
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
-                });
-            }
-        </script>
