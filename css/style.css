@@ -16,3 +16,19 @@ li.myitem{
     list-style-type: square!important;
     margin: 0% 0% 0% 3%;
 }
+.collapse {
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+.collapse:active,
+.collapse:focus,
+.collapse:hover {
+    background-color: #ffffff!important;
+}
+
+.toCollapse {
+    display: none
+}
