@@ -2,10 +2,20 @@
             <div class="container">
                 </br>
                 <center><h4>{{id="myResearchInterests"}}</h4></center>
+                <h5>{{id="myResearchIntro"}}</h5>
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s10">
+                        <ul>
+                            <li>{{id="myVerificationTitle"}}</li>
+                            <li>{{id="myDesignTitle"}}</li>
+                        </ul>
+                    </div>
+                </div>
                 </br>
                 <div class="divider"></div>
                 </br>
-                <button type="button" class="collapse">{{id="mySupervisedStudents"}}<i class="small material-icons">arrow_drop_down</i></button>
+                <button type="button" class="collapse">{{id="myCurrentProjects"}}<i class="small material-icons">arrow_drop_down</i></button>
                 </br>
                 <div class="toCollapse">
                     <center><h5>TODO</h5></center>
@@ -13,10 +23,55 @@
                 </br>
                 <div class="divider"></div>
                 </br>
+                <button type="button" class="collapse">{{id="myOpenPositions"}}<i class="small material-icons">arrow_drop_down</i></button>
+                </br>
+                <div class="toCollapse">
+                    <div class="row">
+                        <div class="col s2"></div>
+                        <div class="col s10">
+                            <!-- <center><h5>{{id="noPositionOpened"}}</h5></center> -->
+                            {{id="noPositionOpened"}}
+                        </div>
+                    </div>
+                </div>
+                </br>
+                <div class="divider"></div>
+                </br>
+                <button type="button" class="collapse">{{id="mySupervisedStudents"}}<i class="small material-icons">arrow_drop_down</i></button>
+                </br>
+                <div class="toCollapse">
+                    <h5>{{id="myPhDStudents"}}</h5>
+                    </br>
+                    <div class="row">
+                        <div class="col s2 center">
+                            <b>
+                                2022 - {{id="myNow"}}
+                            </b>
+                        </div>
+                        <div class="col s8 center">
+                            <a href="https://perso.ens-lyon.fr/oussama.oulkaid/" target="_blank" rel="noopener noreferer">Oussama Oulkaid</a>
+                            </br>
+                            "<i>{{id="myOussamaTopic"}}</i>"
+                            </br>
+                            {{id="myOussamaAdvising"}}.
+                        </div>
+                        <div class="col s2 center">
+                            <b>
+                                LIP, Verimag, Aniah
+                                </br>
+                                Grenoble & Lyon
+                            </b>
+                        </div>
+                    </div>
+                    <h5>{{id="myInternStudents"}}</h5>
+                </div>
+                </br>
+                <div class="divider"></div>
+                </br>
                 <button type="button" class="collapse">{{id="myPublications"}}<i class="small material-icons">arrow_drop_down</i></button>
                 <div class="toCollapse">
                     <h5>{{id="myThematics"}}</h5>
-                    <br/>
+                    </br>
                     <div class="row">
                         <div class="col s2 center">{{id="DSE" tpe="domain"}}</div>
                         <div class="col s4">{{id="myDSE" class="left"}}</div>

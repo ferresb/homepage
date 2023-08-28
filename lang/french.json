@@ -104,7 +104,17 @@
     "myUE": "Unité d'enseignement",
     "myVolume": "Volume",
     "myInCharge": "Responsable(s)",
-    "mySupervisedStudents": "Étudiant(e)s supervisé(e)s",
     "myResearchInterests": "Intérêts de recherche",
+    "myResearchIntro": "Mes recherches actuelles s'articulent principalement autour des thèmes suivants :",
+    "myVerificationTitle": "Modélisation et vérification de systèmes bas-niveau",
+    "myDesignTitle": "Paradigmes de programmation pour la conception numérique",
+    "mySupervisedStudents": "Étudiant(e)s supervisé(e)s",
+    "myCurrentProjects": "Mes projets de recherche",
+    "myOpenPositions": "Offres d'emploi",
+    "noPositionOpened": "Aucune offre d'emploi disponible pour le moment.\nCependant, si mes recherches vous intéressent, n'hésitez pas à me contacter pour discuter d'un éventuel stage, thèse ou postdoc !",
+    "myPhDStudents": "Doctorant(e)s",
+    "myOussamaTopic": "Méthodes formelles pour la vérification de propriétés électriques sur des circuits intégrés",
+    "myOussamaAdvising": "Thèse CIFRE dirigée par Matthieu Moy (LIP) et co-encadrée avec Pascal Raymond (Verimag) et Mehdi Khosravian (Aniah)",
+    "myInternStudents": "Étudiant(e)s en stage",
     "myLastUpdate": "Dernière mise à jour le 22 août 2023"
 }

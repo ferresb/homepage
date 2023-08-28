@@ -103,7 +103,17 @@
     "myUE": "Class",
     "myVolume": "Hours",
     "myInCharge": "In charge",
-    "mySupervisedStudents": "Supervised Students",
     "myResearchInterests": "Research Interests",
+    "myResearchIntro": "Currently, my research interests mainly revolve around the following topics:",
+    "myVerificationTitle": "Modelling and Verification of Low-Level Systems",
+    "myDesignTitle": "Programming paradigms for digital design",
+    "myCurrentProjects": "Current Research Projects",
+    "mySupervisedStudents": "Supervised Students",
+    "myOpenPositions": "Open Positions",
+    "noPositionOpened": "No position is available at the moment.\nHowever, if you are interested in my research activities, do not hesitate to contact me to discuss opportunities for an internship, a thesis or a postdoc!",
+    "myPhDStudents": "PhD Students",
+    "myOussamaTopic": "Formal Verification Techniques for Electrical Rule Checking of Integrated Circuits",
+    "myOussamaAdvising": "Industrial thesis supervised by Matthieu Moy, HDR (LIP), and advised with Pascal Raymond (Verimag) and Mehdi Khosravian (Aniah)", 
+    "myInternStudents": "Internships",
     "myLastUpdate": "Last update on 22 august 2023"
 }
