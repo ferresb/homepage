@@ -103,6 +103,8 @@
     "myUE": "Class",
     "myVolume": "Hours",
     "myInCharge": "In charge",
+    "myEmailAddress": "Email address",
+    "myMailAddress": "Mail address",
     "myResearchInterests": "Research Interests",
     "myResearchIntro": "Currently, my research interests mainly revolve around the following topics:",
     "myVerificationTitle": "Modelling and Verification of Low-Level Systems",

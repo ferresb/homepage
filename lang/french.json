@@ -104,6 +104,8 @@
     "myUE": "Unité d'enseignement",
     "myVolume": "Volume",
     "myInCharge": "Responsable(s)",
+    "myEmailAddress": "Adresse mail ",
+    "myMailAddress": "Adresse postale",
     "myResearchInterests": "Intérêts de recherche",
     "myResearchIntro": "Mes recherches actuelles s'articulent principalement autour des thèmes suivants :",
     "myVerificationTitle": "Modélisation et vérification de systèmes bas-niveau",
