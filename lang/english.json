@@ -117,5 +117,11 @@
     "myOussamaTopic": "Formal Verification Techniques for Electrical Rule Checking of Integrated Circuits",
     "myOussamaAdvising": "Industrial thesis supervised by Matthieu Moy, HDR (LIP), and advised with Pascal Raymond (Verimag) and Mehdi Khosravian (Aniah)", 
     "myInternStudents": "Internships",
+    "myAniahProjectTitle": "\"Formal Verification of Integrated Circuits at Transistor Level\"",
+    "myAniahProjectContext": "industrial collaboration with LIP (Lyon) and Aniah",
+    "myArseneProjectTitle": "\"Hardware and Software Security of Embedded Systems\"",
+    "myArseneProjectContext": "ANR Arsene - PEPR CyberSécurité",
+    "myCaoticProjectTitle": "\"Collaborative Action on Timing Interference\"",
+    "myCaoticProjectContext": "ARN CAOTIC",
     "myLastUpdate": "Last update on 22 august 2023"
 }

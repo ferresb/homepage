@@ -118,5 +118,11 @@
     "myOussamaTopic": "Méthodes formelles pour la vérification de propriétés électriques sur des circuits intégrés",
     "myOussamaAdvising": "Thèse CIFRE dirigée par Matthieu Moy (LIP) et co-encadrée avec Pascal Raymond (Verimag) et Mehdi Khosravian (Aniah)",
     "myInternStudents": "Étudiant(e)s en stage",
+    "myAniahProjectTitle": "\"Méthodes formelles pour la vérification de circuits intégrés au niveau transistor\"",
+    "myAniahProjectContext": "collaboration industrielle avec le LIP (Lyon) et Aniah",
+    "myArseneProjectTitle": "\"Sécurité matérielle et logicielle des systèmes embarqués\"",
+    "myArseneProjectContext": "ANR Arsene - PEPR CyberSécurité",
+    "myCaoticProjectTitle": "\"Collaborative Action on Timing Interference\"",
+    "MyCaoticProjectContext": "ARN CAOTIC",
     "myLastUpdate": "Dernière mise à jour le 22 août 2023"
 }
