@@ -44,37 +44,13 @@ required: $(TARGET_DIR)/index.html \
 	$(TARGET_DIR)/personal.html \
 	$(TARGET_DIR)/phd.html
 
-documents: $(TARGET_DIR)/portfolio.pdf \
-	$(TARGET_DIR)/thesis_slides_FerresBruno.pdf \
-	$(TARGET_DIR)/CV_FerresBruno.pdf \
-	$(TARGET_DIR)/Lecture_Chisel_Archi23.pdf \
-	$(TARGET_DIR)/TP_Chisel_Archi23.tar.gz \
-	$(TARGET_DIR)/gdb_C_lab.tar.gz \
-	$(TARGET_DIR)/$(DOCUMENT_DIR)
+documents: $(TARGET_DIR)/$(DOCUMENT_DIR)
 
 $(TARGET_DIR)/$(DOCUMENT_DIR): $(DOCUMENT_DIR)
 	@cp -r $< $(TARGET_DIR)
 
 $(TARGET_DIR)/phd.html: $(HTML_DIR)/phd.html
 	@cp $< $@
-
-$(TARGET_DIR)/portfolio.pdf: portfolio.pdf
-	@cp --preserve=links $< $@
-
-$(TARGET_DIR)/thesis_slides_FerresBruno.pdf: thesis_slides_FerresBruno.pdf
-	@cp --preserve=links $< $@
-
-$(TARGET_DIR)/CV_FerresBruno.pdf: CV_FerresBruno.pdf
-	@cp --preserve=links $< $@
-
-$(TARGET_DIR)/Lecture_Chisel_Archi23.pdf: Lecture_Chisel_Archi23.pdf
-	@cp --preserve=links $< $@
-
-$(TARGET_DIR)/TP_Chisel_Archi23.tar.gz: TP_Chisel_Archi23.tar.gz
-	@cp --preserve=links $< $@
-
-$(TARGET_DIR)/gdb_C_lab.tar.gz: gdb_C_lab.tar.gz
-	@cp --preserve=links $< $@
 
 $(TARGET_DIR)/%.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)/%.html
 	@cat $(HEADER) 				> 	$@
