@@ -5,8 +5,9 @@ COLOR		?= green
 
 SRC_DIR 	:= .
 HTML_DIR	:= html
-TARGET_DIR	:= htdocs
 CONFIG_DIR	:= lang
+DOCUMENT_DIR := doc
+TARGET_DIR	:= htdocs
 
 DIST 		:= yulpa
 DIST_PATH 	:= /datas/yulpa172811/sites/ferres.me
@@ -48,7 +49,11 @@ documents: $(TARGET_DIR)/portfolio.pdf \
 	$(TARGET_DIR)/CV_FerresBruno.pdf \
 	$(TARGET_DIR)/Lecture_Chisel_Archi23.pdf \
 	$(TARGET_DIR)/TP_Chisel_Archi23.tar.gz \
-	$(TARGET_DIR)/gdb_C_lab.tar.gz
+	$(TARGET_DIR)/gdb_C_lab.tar.gz \
+	$(TARGET_DIR)/$(DOCUMENT_DIR)
+
+$(TARGET_DIR)/$(DOCUMENT_DIR): $(DOCUMENT_DIR)
+	@cp -r $< $(TARGET_DIR)
 
 $(TARGET_DIR)/phd.html: $(HTML_DIR)/phd.html
 	@cp $< $@
