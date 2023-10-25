@@ -106,7 +106,7 @@
     "myEmailAddress": "Email address",
     "myMailAddress": "Mail address",
     "myResearchInterests": "Research Interests",
-    "myResearchIntro": "Currently, my research interests mainly revolve around the following topics:",
+    "myResearchIntro": "Currently, my research interests revolve around the verification of embedded systems, both for safety (response time, ...) and security concerns. More specifically, I am interested in using formal methods for verification at various abstraction level, from the transistor-level to the CPU level",
     "myVerificationTitle": "Modelling and Verification of Low-Level Systems",
     "myDesignTitle": "Programming paradigms for digital design",
     "myCurrentProjects": "Current Research Projects",
