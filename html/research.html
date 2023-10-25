@@ -2,7 +2,7 @@
             <div class="container">
                 </br>
                 <center><h4>{{id="myResearchInterests"}}</h4></center>
-                <h5>{{id="myResearchIntro"}}</h5>
+                <p>{{id="myResearchIntro"}}</p>
                 <div class="row">
                     <div class="col s2"></div>
                     <div class="col s10">
@@ -25,10 +25,11 @@
                     <div class="col s10">
                         <!-- <center><h5>{{id="noPositionOpened"}}</h5></center> -->
                         <!-- {{id="noPositionOpened"}} -->
-                        <a target="_blank" href="doc/sujet_stage_celtic_2023.pdf"><b>[MASTER] "Modélisation et caractérisation d’attaques par faute exploitant l’architecture mémoire"</b></a>
+                        <a target="_blank" href="doc/sujet_stage_celtic_2023.pdf"><b>[MASTER] {{id="myCelticInternship2023"}}</b></a>
                         </br>
-                        <a target="_blank" href="doc/sujet_stage_compcert_2023.pdf"><b>[MASTER] "Compilation prouvée sécurisée vers processeur RISC-V"</b></a>
+                        <a target="_blank" href="doc/sujet_stage_compcert_2023.pdf"><b>[MASTER] {{id="myCompCertInternship2023"}}</b></a>
                     </div>
+                    {{id="mySelfJobProposal"}}
                 </div>
                 <!-- </div> -->
                 <!-- </br> -->
@@ -38,14 +39,15 @@
                 </br>
                 <div class="toCollapse">
                     </br>
+                    <p>{{id="myCurrentProjectIntro"}}:</p>
                     <div class="row">
                         <div class="col s2"></div>
                         <div class="col s10">
                             <b>{{id="myAniahProjectTitle"}}</b> - {{id="myAniahProjectContext"}}
                             </br>
-                            <b>{{id="myArseneProjectTitle"}}</b> - {{id="myArseneProjectContext"}}
+                            <b>{{id="myArseneProjectTitle"}}</b> - {{tpe="link" out="true" href="https://www.pepr-cyber-arsene.fr/" id="myArseneProjectContext"}}
                             </br>
-                            <b>{{id="myCaoticProjectTitle"}}</b> - {{id="myCaoticProjectContext"}}
+                            <b>{{id="myCaoticProjectTitle"}}</b> - {{tpe="link" out="true" href="http://anr-caotic.imag.fr/" id="myCaoticProjectContext"}}
                             </br>
                         </div>
                     </div>
@@ -65,7 +67,7 @@
                             </b>
                         </div>
                         <div class="col s8 center">
-                            <a href="https://perso.ens-lyon.fr/oussama.oulkaid/" target="_blank" rel="noopener noreferer">Oussama Oulkaid</a>
+                            <a href="https://perso.ens-lyon.fr/oussama.oulkaid/" target="_blank" rel="noopener noreferer"><b>Oussama Oulkaid</b></a>
                             </br>
                             "<i>{{id="myOussamaTopic"}}</i>"
                             </br>
@@ -80,6 +82,74 @@
                         </div>
                     </div>
                     <h5>{{id="myInternStudents"}}</h5>
+                    <div class="row">
+                        <div class="col s2 center">
+                            <b>2022</b>
+                            </br>
+                            (4 {{id="myMonths"}})
+                        </div>
+                        <div class="col s8 center">
+                            <a href="https://perso.ens-lyon.fr/oussama.oulkaid/" target="_blank" rel="noopener noreferer"><b>Oussama Oulkaid</b></a> (M2 MOSIG, UGA)
+                            </br>
+                            "<i>Applying Formal Methods to Circuit Electric Verification</i>"
+                            </br>
+                            {{id="myWith"}} Matthieu Moy, Pascal Raymond, Mehdi Khosravian
+                        </div>
+                        <div class="col s2 center">
+                            <b>LIP, Verimag, Aniah</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s2 center">
+                            <b>2021</b>
+                            </br>
+                            (3 {{id="myMonths"}})
+                        </div>
+                        <div class="col s8 center">
+                            <b>Maxime Martin</b> (1A Grenoble INP - Ensimag)
+                            </br>
+                            "<i>Using Hardware Construction Languages to Implement Parametric NEural Network Accelerators on FPGA</i>"
+                            </br>
+                            {{id="myWith"}} Frédéric Pétrot
+                        </div>
+                        <div class="col s2 center">
+                            <b>TIMA</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s2 center">
+                            <b>2021</b>
+                            </br>
+                            (6 {{id="myMonths"}})
+                        </div>
+                        <div class="col s8 center">
+                            <b>Jichen Liang</b> (5A Polytech Grenoble)
+                            </br>
+                            "<i>Improving High Level Estimators for an FPGA Design Space Exploration Framework</i>"
+                            </br>
+                            {{id="myWith"}} Olivier Muller
+                        </div>
+                        <div class="col s2 center">
+                            <b>TIMA</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s2 center">
+                            <b>2021</b>
+                            </br>
+                            (3 {{id="myMonths"}})
+                        </div>
+                        <div class="col s8 center">
+                            <b>Paul Lagarosse</b> (2A Grenoble INP - Ensimag)
+                            </br>
+                            "<i>Implementing Parametric Computation Kernels on FPGA with Chisel</i>"
+                            </br>
+                            {{id="myWith"}} Olivier Muller
+                        </div>
+                        <div class="col s2 center">
+                            <b>TIMA</b>
+                        </div>
+                    </div>
                 </div>
                 </br>
                 <div class="divider"></div>
@@ -183,4 +253,5 @@
                     <br/>
                 </div>
             </div>
+            </br>
         </main>

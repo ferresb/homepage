@@ -34,7 +34,7 @@ CONFIGSOURCES 	:= $(wildcard $(CONFIG_DIR)/*.json)
 
 .PHONY: all clean $(TARGET_DIR) required upload
 
-all: required $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) documents 
+all: clean required $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) documents 
 
 required: $(TARGET_DIR)/index.html \
 	$(TARGET_DIR)/curriculum.html \
