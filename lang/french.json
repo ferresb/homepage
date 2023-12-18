@@ -108,7 +108,7 @@
     "myEmailAddress": "Adresse mail ",
     "myMailAddress": "Adresse postale",
     "myResearchInterests": "Intérêts de recherche",
-    "myResearchIntro": "Mes recherches actuelles s'articulent principalement autour de la modélisation et de la vérification des systèmes embarqués, à la fois pour des propriétés de sûretés (temps de réponse, ...) et de sécurité. En particulier, je m'intéresse à l'application des méthodes formelles pour la vérification à différents niveaux d'abstraction, du transistor au processeur. Je m'intéresse également à la compilation, en particulier les aspects bas-niveau de la compilation vers architecture RISC-V.",
+    "myResearchIntro": "Mes recherches actuelles s'articulent principalement autour de la modélisation et de la vérification des systèmes embarqués, pour des propriétés de sûreté et de sécurité. En particulier, je m'intéresse à l'application des méthodes formelles pour la vérification à différents niveaux d'abstraction, du transistor au processeur. Je m'intéresse également à la compilation, en particulier les aspects bas-niveau de la compilation vers architecture RISC-V, ainsi que l'insertion de contre-mesures à la compilation.",
     "mySupervisedStudents": "Étudiant(e)s supervisé(e)s",
     "myCurrentProjects": "Projets de recherche",
     "myOpenPositions": "Offres d'emploi",
