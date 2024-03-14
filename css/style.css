@@ -12,6 +12,12 @@ main {
     align: right;
 }
 
+.dualcol {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
 li.myitem{
     list-style-type: square!important;
     margin: 0% 0% 0% 3%;
