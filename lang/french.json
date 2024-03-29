@@ -137,6 +137,7 @@
     "myJobNews": "Nous proposons actuellement deux sujets de stage sur la sécurité matérielle, et un sur la vérification formelle de circuits intégrés - plus d'infos dans la section \"Recherche\" !",
     "myDate2024News": "Notre papier \"A Transistor Level Relational Semantics for Electrical Rule Checking by SMT Solving\" vient d'être accepté à DATE'24 !",
     "myRVVInternship2024": "Nous proposons un stage sur l'extension vectorielle de l'architecture RISC-V, sur des aspects à la fois théoriques et pratiques. Plus d'infos dans la section \"Recherche\" !",
+    "myOpenJobs": "N'hésitez pas à consulter la section \"Recherche\" pour voir nos opportunités d'emploi à Verimag!",
     "myWith": "avec",
     "myAnd": "et",
     "mySummary": "Résumé",
@@ -156,5 +157,5 @@
     "myOctober": "Octobre",
     "myNovember": "Novembre",
     "myDecember": "Décembre",
-    "myLastUpdate": "Dernière mise à jour le 15 novembre 2023"
+    "myLastUpdate": "Dernière mise à jour le 29 mars 2024"
 }

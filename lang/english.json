@@ -138,6 +138,7 @@
     "myJobNews": "Check my \"Research\" page for two internship proposals about low-level security of embedded systems, and one proposal about formal verification of integrated circuits.",
     "myDate2024News": "Our latest work \"A Transistor Level Relational Semantics for Electrical Rule Checking by SMT Solving\" has been accepted to DATE'24!",
     "myRVVInternship2024": "We propose an internship on RISC-V \"V\" Vector Extension, both from theoretical and practical aspects. Check my \"Research\" page !", 
+    "myOpenJobs": "Do not hesitate to check the \"Research\" section for our opening positions at Verimag!",
     "myWith": "with",
     "myAnd": "and",
     "mySummary": "Summary",
@@ -157,5 +158,5 @@
     "myOctober": "October",
     "myNovember": "November",
     "myDecember": "December",
-    "myLastUpdate": "Last update on 15 november 2023"
+    "myLastUpdate": "Last update on 29 mars 2024"
 }
