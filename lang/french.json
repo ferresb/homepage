@@ -68,6 +68,8 @@
     "myMCFTeachingShort": "Architectures matérielles, programmation embarquée, sécurité matérielle",
     "myPhDThesis": "Thèse de doctorat",
     "myPhDLong": "Méthodologie de conception de circuits pour FPGA basée sur le paradigme de construction matérielle",
+    "myPhDTeachingShort": "Architectures matérielles, programmation bas-niveau (C, asm)",
+    "myPostDocTeachingShort": "Programmation (C, OCaml, python)",
     "myMonths": "mois",
     "myEdifixioTitle": "Projet de Fin d'Etude",
     "myEdifixio": "Sécurité Web",
