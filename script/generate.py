@@ -3,8 +3,10 @@ import argparse
 import re
 import json
 
+from datetime import date
+
 flag        = "data-translate"
-TPE         = {"span", "link", "item", "pin", "domain", "me"}
+TPE         = {"span", "link", "item", "pin", "domain", "me", "today"}
 pattern     = re.compile('{{[^}]*}}')
 langPH      = "__LANGUAGE__"
 LINK_OUT    = "target=\"_blank\" rel=\"noopener noreferrer\""
@@ -57,6 +59,8 @@ class PlaceHolder:
         tmpText     = self.text.decode('utf8').replace("\n", "<br/>") if self.text else ""
         baseEntry   = "<span {}{}{}>{}</span>".format(flag, tmpId, tmpClass, tmpText)
         linkOut     = LINK_OUT if self.out else ""
+        if self.tpe == "today":
+            return "{}".format(date.today().strftime("%d/%m/%Y"))
         if self.tpe == "pin":
             return "<i class=\"material-icons {}-text\">blur_circular</i>".format(self.color)
         if self.tpe == "span":
