@@ -19,7 +19,7 @@
   "myBio": "Biography",
   "myBioContent[0]": "I graduated from Grenoble INP - Ensimag in 2018, where I studied Embedded Systems and Software, and Université Grenoble Alpes, where I studied CyberSecurity. ",
   "myBioContent[1]": "My PhD researches were then directed by Frédéric Rousseau and supervised by Olivier Muller, between 2018 and 2022, in the SLS team at TIMA lab. We aimed at using the emerging paradigm of Hardware Construction Languages to build a flexible exploration methodology, and provided a PoC framework based on Chisel, as well as an applicative benchmark.",
-  "myBioContent[2]": "From march 2022 to august 2023, I was a post doctoral fellow at LIP laboratory (Lyon), in the CASH team. I worked on formal verification of electronical circuits (ERC) at transistor level, in collaboration with Aniah, a Grenoble-based company, and Verimag laboratory.",
+  "myBioContent[2]": "From march 2022 to august 2023, I was a post doctoral fellow at LIP laboratory (Lyon), in the CASH team. I worked on formal verification of electrical circuits (ERC) at transistor level, in collaboration with Aniah, a Grenoble-based company, and Verimag laboratory.",
   "myCPP": "Preparatory classes for engineering schools belonging to the INP group",
   "myCPPMajor": "Major in Mathematics and Computer Sciences",
   "myCaotic2025InternshipProposals": "We offer two M2 internship positions, aroung the modeling of interferences in critical-systems. Please check the 'Research' page.",
