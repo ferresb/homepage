@@ -32,7 +32,7 @@ CONFIGFOLDER	:= $(CONFIG_DIR)
 CONFIGTARGET	:= $(TARGET_DIR)/$(CONFIGFOLDER)
 CONFIGSOURCES 	:= $(wildcard $(CONFIG_DIR)/*.json)
 
-.PHONY: all clean $(TARGET_DIR) required upload
+.PHONY: all clean $(TARGET_DIR) required www
 
 all: clean required $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) documents 
 
@@ -82,5 +82,5 @@ $(CONFIGTARGET): $(SRC_DIR)/$(CONFIGFOLDER) $(CONFIGSOURCES)
 clean:
 	@rm -rf $(TARGET_DIR)
 
-upload: all
+www: all
 	@scp -r $(TARGET_DIR) $(DIST):$(DIST_PATH)

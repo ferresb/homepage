@@ -54,6 +54,8 @@
   "myFebruary": "Février",
   "myGermany": "Allemagne",
   "myHereLink": "ici",
+  "myHighschool": "Baccalauréat Scientifique",
+  "myHighschoolMajor": "Option SVT, spécialité mathématiques",
   "myHome": "Accueil",
   "myHomepage": "Sources de cette page web",
   "myInCharge": "Responsable(s)",
@@ -158,5 +160,9 @@
   "myWebsite": "Site :",
   "myWith": "avec",
   "myYear": "Année",
+  "myTalks": "Présentations",
+  "myGermany": "Allemagne",
+  "myNationalDays": "colloque nationale",
+  "myApplicationTalks": "Séminaires candidat",
   "noPositionOpened": "Aucune offre d'emploi disponible pour le moment.\nCependant, si mes recherches vous intéressent, n'hésitez pas à me contacter pour discuter d'un éventuel stage, thèse ou postdoc !"
 }
