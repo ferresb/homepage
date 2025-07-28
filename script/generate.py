@@ -15,7 +15,8 @@ DOMAINS = {
     "FPGA": "green",
     "DSE": "blue",
     "ERC": "red",
-    "FM": "purple"
+    "FM": "purple",
+    "RTS": "gray"
 }
 
 GOOGLE_SCHOLAR="https://scholar.google.fr/citations?user=x7_S3xAAAAAJ&hl=fr"

@@ -130,6 +130,8 @@
   "myQece": "Prototype logiciel permettant à la fois de définir des méthodologies adaptables d'estimation de circuit numérique, et des processus flexibles d'exploration d'espace de conception.",
   "myQeceBenchmark": "Banc d'applications représentatives de l'utilisation des FPGAs, utilisé pour démontrer l'utilisabilité de QECE sur divers cas d'utilisation.",
   "myQualif": "Je suis qualifié en section 27 (informatique) du CNU, ce qui m'autorise à concourir pour les postes de Maître de Conférences en France.",
+  "myRTNS2025News": "Notre papier \"Communication and Shared Memory Efficient Mapping Techniques of Real-Time DAGs upon Clustered Multicore Platforms\" vient d'être accepté à RTNS 2025 (Pise).",
+  "myRTS": "Systèmes Temps-Réels",
   "myResearch": "Recherche",
   "myResearchInterests": "Intérêts de recherche",
   "myResearchIntro": "Mes recherches actuelles s'articulent principalement autour de la modélisation et de la vérification des systèmes embarqués, pour des propriétés de sûreté et de sécurité. En particulier, je m'intéresse à l'application des méthodes formelles pour la vérification à différents niveaux d'abstraction, du transistor au processeur. Je m'intéresse également à la compilation, en particulier les aspects bas-niveau de la compilation vers architecture RISC-V, et les problématiques de sécurité liées.",

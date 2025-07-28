@@ -129,6 +129,8 @@
   "myPublications": "Publications",
   "myQece": "Framework which allows the users to define adaptable estimation methodologies for digital circuits, and flexible design space exploration strategies.",
   "myQeceBenchmark": "Benchmark of FPGA representative applications, used to demonstrate the usability of QECE on various use cases.",
+  "myRTNS2025News": "Our paper \"Communication and Shared Memory Efficient Mapping Techniques of Real-Time DAGs upon Clustered Multicore Platforms\" just got accepted in RTNS 2025 (Pisa).",
+  "myRTS": "Real-Time Systems",
   "myResearch": "Research",
   "myResearchInterests": "Research Interests",
   "myResearchIntro": "Currently, my research interests revolve around the verification of embedded systems, both for safety and security concerns. More specifically, I am interested in using formal methods for verification at various abstraction level, from the transistor-level to the CPU level. I am also interested in compilation, especially the low-level aspects of RISC-V compilation, and the related security aspects.",
