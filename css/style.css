@@ -38,3 +38,9 @@ li.myitem{
 .toCollapse {
     display: none
 }
+
+#newsBox {
+    max-height:30vh;
+    overflow-y:scroll;
+    display:inline-block;
+}
