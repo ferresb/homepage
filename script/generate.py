@@ -16,7 +16,10 @@ DOMAINS = {
     "DSE": "blue",
     "ERC": "red",
     "FM": "purple",
-    "RTS": "gray"
+    "RTS": "gray",
+    "Secu": "cyan",
+    "Comp": "pink",
+    "UArch": "black"
 }
 
 GOOGLE_SCHOLAR="https://scholar.google.fr/citations?user=x7_S3xAAAAAJ&hl=fr"
