@@ -8,13 +8,14 @@
                             <span>{{class="hide-on-med-and-down" id="myJob"}}</span>
                             <a href="#" data-target="mobile-menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
                             <ul class="hide-on-med-and-down right">
-                                {{tpe="item" href="index.html" id="myHome"}}
-                                {{tpe="item" href="curriculum.html" id="myCurriculum"}}
-                                {{tpe="item" href="research.html" id="myResearch"}}
-                                {{tpe="item" href="software.html" id="mySoftware"}}
-                                {{tpe="item" href="teaching.html" id="myTeaching"}}
-                                <!-- {{tpe="item" href="personal.html" id="myPersonal"}} -->
-                                <li><a onclick="translateContent()"><img img-translate width="30" src="images/__LANGUAGE__.jpg" title="Require javascript to be enabled!"/></a></li>
+                                {{tpe="navItem" href="index" id="myHome"}}
+                                {{tpe="navItem" href="curriculum" id="myCurriculum"}}
+                                {{tpe="navItem" href="research" id="myResearch"}}
+                                {{tpe="navItem" href="software" id="mySoftware"}}
+                                {{tpe="navItem" href="teaching" id="myTeaching"}}
+                                <!-- {{tpe="navItem" href="personal.html" id="myPersonal"}} -->
+                                {{tpe="translate"}}
+                                <!-- <li><a onclick="translateContent()"><img img-translate width="30" src="images/__LANGUAGE__.jpg" title="Require javascript to be enabled!"/></a></li> -->
                             </ul>
                         </div>
                     </div>
@@ -23,12 +24,13 @@
         </header>
 
         <ul class="sidenav center" id="mobile-menu">
-            {{tpe="item" href="index.html" id="myHome"}}
-            {{tpe="item" href="curriculum.html" id="myCurriculum"}}
-            {{tpe="item" href="research.html" id="myResearch"}}
-            {{tpe="item" href="software.html" id="mySoftware"}}
-            {{tpe="item" href="teaching.html" id="myTeaching"}}
-            <!-- {{tpe="item" href="personal.html" id="myPersonal"}} -->
-            <li><a onclick="translateContentAndQuit()"><img img-translate width="30" src="images/__LANGUAGE__.jpg"/></a></li>
+            {{tpe="navItem" href="index" id="myHome"}}
+            {{tpe="navItem" href="curriculum" id="myCurriculum"}}
+            {{tpe="navItem" href="research" id="myResearch"}}
+            {{tpe="navItem" href="software" id="mySoftware"}}
+            {{tpe="navItem" href="teaching" id="myTeaching"}}
+            <!-- {{tpe="navItem" href="personal.html" id="myPersonal"}} -->
+            {{tpe="translate"}}
+            <!-- <li><a onclick="translateContentAndQuit()"><img img-translate width="30" src="images/__LANGUAGE__.jpg"/></a></li> -->
         </ul>
 

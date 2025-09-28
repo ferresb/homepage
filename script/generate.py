@@ -6,7 +6,7 @@ import json
 from datetime import date
 
 flag        = "data-translate"
-TPE         = {"span", "link", "item", "pin", "domain", "me", "today"}
+TPE         = {"span", "link", "item", "pin", "domain", "me", "today", "navItem", "translate"}
 pattern     = re.compile('{{[^}]*}}')
 langPH      = "__LANGUAGE__"
 LINK_OUT    = "target=\"_blank\" rel=\"noopener noreferrer\""
@@ -25,7 +25,8 @@ DOMAINS = {
 GOOGLE_SCHOLAR="https://scholar.google.fr/citations?user=x7_S3xAAAAAJ&hl=fr"
 
 class PlaceHolder:
-    def __init__(self, url, config, string):
+    def __init__(self, args, config, string):
+        url = args.src
         def findValue(key, default = None, error = False):
                 def findall(key):
                     return re.compile('{}="[^"\r\n]+"'.format(key)).findall(string)
@@ -47,6 +48,7 @@ class PlaceHolder:
         self.color  = findValue("color", "blue")
         self.url    = url.split("/")[-1]
         self.out    = True if findValue("out") != None else False
+        self.lang   = args.lang
         try:
             self.text   = config[self.id].encode('utf-8')
         except:
@@ -57,6 +59,13 @@ class PlaceHolder:
         return "tpe: {}, id: {}, link: {}, class: {}".format(self.tpe, self.id, self.link, self.cls)
 
     def buildEntry(self):
+        if self.tpe == "navItem":
+            self.link = ("{}_fr.html".format(self.link)) if self.lang == 'french' else ("{}_en.html".format(self.link))
+        if self.tpe == "translate":
+            if self.lang == "english":
+                translateLink = self.url.replace("_en.html", "_fr.html")
+            else:
+                translateLink = self.url.replace("_fr.html", "_en.html")
         tmpId       = " id=\"" + self.id + "\"" if self.id else ""
         tmpClass    = " class=\"" + self.cls + "\"" if self.cls else ""
         tmpLink     = " href=\"" + self.link + "\"" if self.link else ""
@@ -87,6 +96,13 @@ class PlaceHolder:
                 return "<li class=\"active\">{}</li>".format(linkEntry)
             else:
                 return "<li>{}</li>".format(linkEntry)
+        if self.tpe == "navItem":
+            if self.link == self.url.replace(".html", ""):
+                return "<li class=\"active\">{}</li>".format(linkEntry)
+            else:
+                return "<li>{}</li>".format(linkEntry)
+        if self.tpe == "translate":
+            return "<li><a href=\"{}\"><img img-translate width=\"30\" src=\"images/{}.jpg\"/></a></li>".format(translateLink, self.lang)
 
 def loadJson(args):
     f = open("{}/{}.json".format(args.local, args.lang))
@@ -104,7 +120,7 @@ def replace(args):
     f.close()
     for i in range(0, len(srcLines)):
         for p in pattern.finditer(srcLines[i]):
-            ph = PlaceHolder(args.src, config, p.group().replace("{{", "").replace("}}", ""))
+            ph = PlaceHolder(args, config, p.group().replace("{{", "").replace("}}", ""))
             srcLines[i] = srcLines[i].replace(p.group(), ph.buildEntry())
     f = open(args.dest, 'w')
     for line in srcLines:
