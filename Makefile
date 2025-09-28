@@ -98,7 +98,7 @@ clean:
 	@rm -rf $(TARGET_DIR)
 
 www-all: all
-	@scp -r $(TARGET_DIR) $(DIST):$(DIST_PATH)
+	@scp -r $(TARGET_DIR) $(DIST):$(DIST_PATH)/htdocs
 
 www: all
-	@scp -r $(TARGET_DIR)/*.html $(DIST):$(DIST_PATH)
+	@scp -r $(TARGET_DIR)/*.html $(DIST):$(DIST_PATH)/htdocs

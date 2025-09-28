@@ -24,6 +24,9 @@ DOMAINS = {
 
 GOOGLE_SCHOLAR="https://scholar.google.fr/citations?user=x7_S3xAAAAAJ&hl=fr"
 
+def switchLang(lang):
+    return "french" if lang == "english" else "english"
+
 class PlaceHolder:
     def __init__(self, args, config, string):
         url = args.src
@@ -102,16 +105,13 @@ class PlaceHolder:
             else:
                 return "<li>{}</li>".format(linkEntry)
         if self.tpe == "translate":
-            return "<li><a href=\"{}\"><img img-translate width=\"30\" src=\"images/{}.jpg\"/></a></li>".format(translateLink, self.lang)
+            return "<li><a href=\"{}\"><img img-translate width=\"30\" src=\"images/{}.jpg\"/></a></li>".format(translateLink, switchLang(self.lang))
 
 def loadJson(args):
     f = open("{}/{}.json".format(args.local, args.lang))
     data = json.load(f)
     f.close()
     return data
-
-def switchLang(args):
-    return "french" if args.lang == "english" else "english"
 
 def replace(args):
     config = loadJson(args)
@@ -124,7 +124,7 @@ def replace(args):
             srcLines[i] = srcLines[i].replace(p.group(), ph.buildEntry())
     f = open(args.dest, 'w')
     for line in srcLines:
-        f.write(line.replace(langPH, switchLang(args)))
+        f.write(line.replace(langPH, switchLang(args.lang)))
     f.close()
 
 parser = argparse.ArgumentParser(description='Generate a web page from the templating system.')
