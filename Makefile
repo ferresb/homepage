@@ -36,12 +36,18 @@ CONFIGSOURCES 	:= $(wildcard $(CONFIG_DIR)/*.json)
 
 all: clean required $(JSTARGET) $(CSSTARGET) $(IMAGETARGET) $(CONFIGTARGET) documents 
 
-required: $(TARGET_DIR)/index.html \
-	$(TARGET_DIR)/curriculum.html \
-	$(TARGET_DIR)/research.html \
-	$(TARGET_DIR)/software.html \
-	$(TARGET_DIR)/teaching.html \
-	$(TARGET_DIR)/personal.html \
+required: $(TARGET_DIR)/index_en.html \
+	$(TARGET_DIR)/curriculum_en.html \
+	$(TARGET_DIR)/research_en.html \
+	$(TARGET_DIR)/software_en.html \
+	$(TARGET_DIR)/teaching_en.html \
+	$(TARGET_DIR)/personal_en.html \
+    $(TARGET_DIR)/index_fr.html \
+	$(TARGET_DIR)/curriculum_fr.html \
+	$(TARGET_DIR)/research_fr.html \
+	$(TARGET_DIR)/software_fr.html \
+	$(TARGET_DIR)/teaching_fr.html \
+	$(TARGET_DIR)/personal_fr.html \
 	$(TARGET_DIR)/phd.html
 
 documents: $(TARGET_DIR)/$(DOCUMENT_DIR)
@@ -52,12 +58,21 @@ $(TARGET_DIR)/$(DOCUMENT_DIR): $(DOCUMENT_DIR)
 $(TARGET_DIR)/phd.html: $(HTML_DIR)/phd.html
 	@cp $< $@
 
-$(TARGET_DIR)/%.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)/%.html
+# generate english pages
+$(TARGET_DIR)/%_en.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)/%.html
 	@cat $(HEADER) 				> 	$@
 	@cat $(NAVBAR) 				>> 	$@
 	@cat $(HTML_DIR)/$*.html 	>> 	$@
 	@cat $(FOOTER) 				>> 	$@
-	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language $(LANGUAGE) --color $(COLOR)
+	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language english --color $(COLOR)
+
+# generate french pages
+$(TARGET_DIR)/%_fr.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)/%.html
+	@cat $(HEADER) 				> 	$@
+	@cat $(NAVBAR) 				>> 	$@
+	@cat $(HTML_DIR)/$*.html 	>> 	$@
+	@cat $(FOOTER) 				>> 	$@
+	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language french --color $(COLOR)
 
 $(TARGET_DIR):
 	@mkdir -p $@
