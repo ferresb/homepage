@@ -82,5 +82,8 @@ $(CONFIGTARGET): $(SRC_DIR)/$(CONFIGFOLDER) $(CONFIGSOURCES)
 clean:
 	@rm -rf $(TARGET_DIR)
 
-www: all
+www-all: all
 	@scp -r $(TARGET_DIR) $(DIST):$(DIST_PATH)
+
+www: all
+	@scp -r $(TARGET_DIR)/*.html $(DIST):$(DIST_PATH)
