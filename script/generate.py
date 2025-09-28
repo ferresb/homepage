@@ -100,7 +100,7 @@ class PlaceHolder:
             else:
                 return "<li>{}</li>".format(linkEntry)
         if self.tpe == "navItem":
-            if self.link == self.url.replace(".html", ""):
+            if self.link == self.url:
                 return "<li class=\"active\">{}</li>".format(linkEntry)
             else:
                 return "<li>{}</li>".format(linkEntry)
