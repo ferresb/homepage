@@ -48,6 +48,7 @@ required: $(TARGET_DIR)/index_en.html \
 	$(TARGET_DIR)/software_fr.html \
 	$(TARGET_DIR)/teaching_fr.html \
 	$(TARGET_DIR)/personal_fr.html \
+	$(TARGET_DIR)/index.html \
 	$(TARGET_DIR)/phd.html
 
 documents: $(TARGET_DIR)/$(DOCUMENT_DIR)
@@ -56,6 +57,10 @@ $(TARGET_DIR)/$(DOCUMENT_DIR): $(DOCUMENT_DIR)
 	@cp -r $< $(TARGET_DIR)
 
 $(TARGET_DIR)/phd.html: $(HTML_DIR)/phd.html
+	@cp $< $@
+
+# force redirect from root
+$(TARGET_DIR)/index.html: $(TARGET_DIR)/index_en.html
 	@cp $< $@
 
 # generate english pages
@@ -98,7 +103,7 @@ clean:
 	@rm -rf $(TARGET_DIR)
 
 www-all: all
-	@scp -r $(TARGET_DIR) $(DIST):$(DIST_PATH)/htdocs
+	@scp -r $(TARGET_DIR) $(DIST):$(DIST_PATH)
 
 www: all
 	@scp -r $(TARGET_DIR)/*.html $(DIST):$(DIST_PATH)/htdocs
