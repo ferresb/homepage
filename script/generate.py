@@ -6,10 +6,23 @@ import json
 from datetime import date
 
 flag        = "data-translate"
-TPE         = {"span", "link", "item", "pin", "domain", "me", "today", "navItem", "translate"}
+TPE         = {"span", "link", "item", "pin", "domain", "me", "today", "navItem", "translate", "json"}
 pattern     = re.compile('{{[^}]*}}')
 langPH      = "__LANGUAGE__"
 LINK_OUT    = "target=\"_blank\" rel=\"noopener noreferrer\""
+
+MONTHS = { 1: {"english": "January", "french": "Janvier"},
+           2: {"english": "February", "french": "Février"},
+           3: {"english": "March", "french": "Mars"},
+           4: {"english": "April", "french": "Avril"},
+           5: {"english": "May", "french": "Mai"},
+           6: {"english": "June", "french": "Juin"},
+           7: {"english": "July", "french": "Juillet"},
+           8: {"english": "August", "french": "Août"},
+           9: {"english": "September", "french": "Septembre"},
+          10: {"english": "October", "french": "Octobre"},
+          11: {"english": "November", "french": "Novembre"},
+          12: {"english": "December", "french": "Decembre"}}
 
 DOMAINS = {
     "FPGA": "green",
@@ -52,6 +65,7 @@ class PlaceHolder:
         self.url    = url.split("/")[-1]
         self.out    = True if findValue("out") != None else False
         self.lang   = args.lang
+        self.content = args.content
         try:
             self.text   = config[self.id].encode('utf-8')
         except:
@@ -62,6 +76,41 @@ class PlaceHolder:
         return "tpe: {}, id: {}, link: {}, class: {}".format(self.tpe, self.id, self.link, self.cls)
 
     def buildEntry(self):
+        if self.tpe == "json":
+            content = loadJson("{}/{}.json".format(self.content, self.id))
+            columns = content['layout']['columns']
+            entries = content['entries']
+            html = ""
+            for e in entries:
+                row = "<div class=\"row\">\n"
+                for c in columns:
+                    if c['align'] == 'center':
+                        entry = "<div class=\"col s{} center\">\n".format(c['size'])
+                    else:
+                        entry = "<div class=\"col s{}\">\n".format(c['size'])
+                    match c['style']:
+                        case 'normal':
+                            pass
+                        case 'bold':
+                            entry += "<b>"
+                        case _:
+                            raise "Unknown style {}".format(c['style'])
+                    for key in c['content']:
+                        key = self.lang if key == 'CONTENT' else key
+                        value = MONTHS[int(e[key])][self.lang] if (key == 'month') else e[key]
+                        entry += "{} ".format(value)
+                    row += "{}".format(entry)
+                    match c['style']:
+                        case 'normal':
+                            pass
+                        case 'bold':
+                            row += "</b>"
+                        case _:
+                            raise "Unknown style {}".format(c['style'])
+                    row += "\n</div>\n"
+                html += row
+                html += "</div>\n"
+            return html
         if self.tpe == "navItem":
             self.link = ("{}_fr.html".format(self.link)) if self.lang == 'french' else ("{}_en.html".format(self.link))
         if self.tpe == "translate":
@@ -107,14 +156,14 @@ class PlaceHolder:
         if self.tpe == "translate":
             return "<li><a href=\"{}\"><img img-translate width=\"30\" src=\"images/{}.jpg\"/></a></li>".format(translateLink, switchLang(self.lang))
 
-def loadJson(args):
-    f = open("{}/{}.json".format(args.local, args.lang))
+def loadJson(filename):
+    f = open(filename)
     data = json.load(f)
     f.close()
     return data
 
 def replace(args):
-    config = loadJson(args)
+    config = loadJson("{}/{}.json".format(args.local, args.lang))
     f = open(args.src, 'r')
     srcLines = f.readlines()
     f.close()
@@ -131,6 +180,7 @@ parser = argparse.ArgumentParser(description='Generate a web page from the templ
 parser.add_argument('src', metavar='source', type=str, help='The source file to use.')
 parser.add_argument('dest', metavar='destination', type=str, help='The destination file to generate.')
 parser.add_argument('local', metavar='local', type=str, help='The configuration folder for the languages.')
+parser.add_argument('content', metavar='content', type=str, help='The folder containing the content as JSON files.')
 parser.add_argument('--language', dest='lang', type=str, default='french', help='The default language for display. Default to french.')
 parser.add_argument('--color', dest='color', type=str, default='green', help='The base color to be used. Default to green.')
 

@@ -1,0 +1,58 @@
+{
+    "layout":
+    {
+        "columns":
+        [
+            {
+                "size": "2",
+                "content": ["month", "year"],
+                "style": "bold",
+                "align": "center"
+            },
+            {
+                "size": "10",
+                "content": ["CONTENT"],
+                "style": "normal",
+                "align": "left"
+            }
+        ]
+    },
+    "entries":[
+        {
+            "month": "11",
+            "year": "2025",
+            "english": "Congratulations to Oussama for succesfully defending his Ph.D. thesis !",
+            "french": "Félicitations à Oussama pour avoir soutenu sa thèse avec brio !"
+        },
+        {
+            "month": "09",
+            "year": "2025",
+            "english": "Our article \"Modeling Techniques for the Formal Verification of Integrated Circuits at Transistor-Level: Performance vs. Precision Trade-offs\" just got accepted for publication in IEEE TCAD journal.",
+            "french": "Notre papier \"Modeling Techniques for the Formal Verification of Integrated Circuits at Transistor-Level: Performance vs Precision Trade-offs\" vient d'être accepté pour publication dans le journal IEEE TCAD."
+        },
+        {
+            "month": "07",
+            "year": "2025",
+            "english": "Our paper \"Communication and Shared Memory Efficient Mapping Techniques of Real-Time DAGs upon Clustered Multicore Platforms\" just got accepted in RTNS 2025 (Pisa).",
+            "french": "Notre papier \"Communication and Shared Memory Efficient Mapping Techniques of Real-Time DAGs upon Clustered Multicore Platforms\" vient d'être accepté à RTNS 2025 (Pise)."
+        },
+        {
+            "month": "07",
+            "year": "2025",
+            "english": "Our article \"A Survey on Transistor-Level Electrical Rule Checking of Integrated Circuits\" has been accepted for publication in ACM TODAES.",
+            "french": "Notre article \"A Survey on Transistor-Level Electrical Rule Checking of Integrated Circuits\" a été accepté pour publication dans le journal ACM TODAES."
+        },
+        {
+            "month": "11",
+            "year": "2023",
+            "english": "Our latest work \"A Transistor Level Relational Semantics for Electrical Rule Checking by SMT Solving\" has been accepted to DATE'24!",
+            "french": "Notre papier \"A Transistor Level Relational Semantics for Electrical Rule Checking by SMT Solving\" vient d'être accepté à DATE'24 !"
+        },
+        {
+            "month": "09",
+            "year": "2023",
+            "english": "I have been appointed as Associate Professor at Verimag/UGA.",
+            "french": "Je suis désormais maître de conférences au laboratoire Verimag et à l'UFR IM²AG."
+        }
+    ]
+}

@@ -7,6 +7,7 @@ SRC_DIR 	:= .
 HTML_DIR	:= html
 CONFIG_DIR	:= lang
 DOCUMENT_DIR := doc
+CONTENT_DIR := content
 TARGET_DIR	:= htdocs
 
 DIST 		:= yulpa
@@ -69,7 +70,7 @@ $(TARGET_DIR)/%_en.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)
 	@cat $(NAVBAR) 				>> 	$@
 	@cat $(HTML_DIR)/$*.html 	>> 	$@
 	@cat $(FOOTER) 				>> 	$@
-	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language english --color $(COLOR)
+	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) $(CONTENT_DIR) --language english --color $(COLOR)
 
 # generate french pages
 $(TARGET_DIR)/%_fr.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)/%.html
@@ -77,7 +78,7 @@ $(TARGET_DIR)/%_fr.html: $(HEADER) $(NAVBAR) $(FOOTER) $(TARGET_DIR) $(HTML_DIR)
 	@cat $(NAVBAR) 				>> 	$@
 	@cat $(HTML_DIR)/$*.html 	>> 	$@
 	@cat $(FOOTER) 				>> 	$@
-	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) --language french --color $(COLOR)
+	@python $(SCRIPT) $@ $@ $(CONFIG_DIR) $(CONTENT_DIR) --language french --color $(COLOR)
 
 $(TARGET_DIR):
 	@mkdir -p $@
