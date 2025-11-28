@@ -1,0 +1,52 @@
+{
+    "layout":
+    {
+        "columns":
+        [
+            {
+                "size": "2",
+                "content": [],
+                "style": "normal",
+                "align": "left"
+            },
+            {
+                "size": "2",
+                "content": ["period"],
+                "style": "bold",
+                "align": "left"
+            },
+            {
+                "size": "5",
+                "content": ["CONTENT"],
+                "style": "normal",
+                "align": "center"
+            },
+            {
+                "size": "3",
+                "content": ["affiliation"],
+                "style": "normal",
+                "align": "left"
+            }
+        ]
+    },
+    "entries":[
+        {
+            "period": "2023 - now",
+            "english": "<b>Associate Professor</b></br><u>Research:</u> Digital design and verification, security, compilation</br><u>Teaching:</u> Hardware architectures, low-level programming, hardware security", 
+            "french": "<b>Maître de Conférences</b></br><u>Recherche :</u> Conception numérique et vérification, sécurité, compilation</br><u>Enseignements :</u> Architectures matérielles, programmation embarquée, sécurité matérielle",
+            "affiliation": "<b class=\"right\" align=right>Verimag/UGA, Grenoble</b>"
+        },
+        {
+            "period": "2022 - 2023",
+            "english": "<b>Post doctoral researcher</b></br><u>Research:</u> Formal verification of electrical rules at transistor level</b><u>Teaching:</u> Programming (C, OCaml, python)", 
+            "french": "<b>Chercheur post-doctorant</b></br><u>Recherche :</u> Vérification formelle de règles électriques au niveau transistor</br><u>Enseignements :</u> Programmation (C, OCaml, python)",
+            "affiliation": "<b class=\"right\" align=right>LIP (ENS & INRIA), Lyon</br>Aniah, Grenoble</b>"
+        },
+        {
+            "period": "2018 - 2022",
+            "english": "<b>PhD Candidate</b></br><u>Research:</u> Hardware Construction Language based design methodology for FPGA circuits</br><u>Teaching:</u> Hardware architectures, low-level programming (C, asm)", 
+            "french": "<b>Doctorant</b></br><u>Recherche :</u> Méthodologie de conception de circuits pour FPGA basée sur le paradigme de construction matérielle</br><u>Enseignements :</u> Architectures matérielles, programmation bas-niveau (C, asm)",
+            "affiliation": "<b class=\"right\" align=right>TIMA (UGA & Grenoble INP)</b>"
+        }
+    ]
+}

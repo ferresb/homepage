@@ -1,0 +1,34 @@
+{
+    "layout":
+    {
+        "columns":
+        [
+            {
+                "size": "2",
+                "content": ["begin", "NOW"],
+                "style": "bold",
+                "align": "center"
+            },
+            {
+                "size": "10",
+                "content": ["content"],
+                "style": "normal",
+                "align": "center"
+            }
+        ]
+    },
+    "entries":[
+        {
+            "begin": "2024 - ",
+            "content": "<b>Shannon meets Cray</b> - <a href=\"https://sxc.inria.fr\" target=\"_blank\" rel=\"noopener noreferrer\">ANR SxC</a>"
+        },
+        {
+            "begin": "2023 - ",
+            "content": "<b>Collaborative Action on Timing Interference</b> - <a href=\"https://anr-caotic.imag.fr/\" target=\"_blank\" rel=\"noopener noreferrer\">ANR CAOTIC</a>"
+        },
+        {
+            "begin": "2023 - ",
+            "content": "<b>Sécurité matérielle et logicielle des systèmes embarqués</b> - <a href=\"https://www.pepr-cyber-arsene.fr/\" target=\"_blank\" rel=\"noopener noreferrer\">ANR Arsene - PEPR CyberSécurité</a>"
+        }
+    ]
+}

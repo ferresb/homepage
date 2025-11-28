@@ -1,0 +1,27 @@
+{
+    "layout":
+    {
+        "columns":
+        [
+            {
+                "size": "2",
+                "content": ["period"],
+                "style": "bold",
+                "align": "center"
+            },
+            {
+                "size": "10",
+                "content": ["CONTENT"],
+                "style": "normal",
+                "align": "center"
+            }
+        ]
+    },
+    "entries":[
+        {
+            "period": "2022 - 2025",
+            "english": "<b>Formal Verification of Integrated Circuits at Transistor Level</b> - industrial collaboration with LIP (Lyon) and Aniah",
+            "french": "<b>Méthodes formelles pour la vérification de circuits intégrés au niveau transistor</b> - collaboration industrielle avec le LIP (Lyon) et Aniah "
+        }
+    ]
+}

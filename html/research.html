@@ -24,53 +24,15 @@
                         <b>{{id="mySelfJobProposal"}}</b>
                     </div>
                 </div>
-                <!-- </div> -->
-                <!-- </br> -->
                 <div class="divider"></div>
-                <!-- <button type="button" class="collapse">{{id="myCurrentProjects"}}<i class="small material-icons">arrow_drop_down</i></button> -->
-                <h4 data-translate id="myCurrentProjects">{{id="myCurrentProjects"}}</h4>
+                <h4>{{id="myCurrentProjects"}}</h4>
                 <p>{{id="myCurrentProjectIntro"}}:</p>
-                <div class="row">
-                    <div class="col s2 center">
-                        <b>2024 - {{id="myNow"}}</b>
-                    </div>
-                    <div class"col s10 center">
-                        <b>{{id="mySxCProjectTitle"}}</b> - {{tpe="link" out="true" href="https://sxc.inria.fr" id="mySxCProjectContext"}}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s2 center">
-                        <b>2023 - {{id="myNow"}}</b>
-                    </div>
-                    <div class"col s10 center">
-                        <b>{{id="myCaoticProjectTitle"}}</b> - {{tpe="link" out="true" href="https://anr-caotic.imag.fr/" id="myCaoticProjectContext"}}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s2 center">
-                        <b>2023 - {{id="myNow"}}</b>
-                    </div>
-                    <div class"col s10 center">
-                        <b>{{id="myArseneProjectTitle"}}</b> - {{tpe="link" out="true" href="https://www.pepr-cyber-arsene.fr/" id="myArseneProjectContext"}}
-                    </div>
-                </div>
-                </br>
+                {{tpe="json" id="projects"}}
                 <div class="divider"></div>
                 </br>
-                <!-- <button type="button" class="collapse">{{id="myPastProjects"}}<i class="small material-icons">arrow_drop_down</i></button> -->
                 <h4>{{id="myPastProjects"}}</h4>
-                <!-- <div class="toCollapse"> -->
-                    </br>
-                    <div class="row">
-                        <div class="col s2 center">
-                            <b>2022 - 2025</b>
-                        </div>
-                        <div class="col s10 center">
-                            <b>{{id="myAniahProjectTitle"}}</b> - {{id="myAniahProjectContext"}}
-                        </div>
-                    </div>
-                <!-- </div> -->
                 </br>
+                {{tpe="json" id="past_projects"}}
                 </br>
                 <div class="divider"></div>
                 </br>

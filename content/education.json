@@ -1,0 +1,64 @@
+{
+    "layout":
+    {
+        "columns":
+        [
+            {
+                "size": "2",
+                "content": [],
+                "style": "normal",
+                "align": "left"
+            },
+            {
+                "size": "2",
+                "content": ["period"],
+                "style": "bold",
+                "align": "left"
+            },
+            {
+                "size": "5",
+                "content": ["CONTENT"],
+                "style": "normal",
+                "align": "center"
+            },
+            {
+                "size": "3",
+                "content": ["affiliation"],
+                "style": "normal",
+                "align": "left"
+            }
+        ]
+    },
+    "entries":[
+        {
+            "period": "2018 - 2022",
+            "english": "PhD thesis prepared at TIMA laboratory, in the System Level Synthesis (SLS) team.</br><i>Leveraging Hardware Construction Languages for Flexible Design Space Exploration on FPGA</i>",
+            "french": "Thèse de doctorat préparée au sein de l'équipe SLS du laboratoire TIMA.</br><i>Utilisation de langages de construction matérielle pour une exploration flexible des espaces de conception sur FPGA</i>",
+            "affiliation": "<b class=\"right\" align=right>Université Grenoble Alpes</b>"
+        },
+        {
+            "period": "2017 - 2018",
+            "english": "MSc in CyberSecurity",
+            "french": "Master en CyberSécurité",
+            "affiliation": "<b class=\"right\" align=right>Université Grenoble Alpes</b>"
+        },
+        {
+            "period": "2015 - 2018",
+            "english": "Engineering Degree in Computer Science and Applied Mathematics</br><i>Major in Embedded Software and Systems</i>",
+            "french": "Diplôme d'Ingénieur en Informatique et Mathématiques Appliquées</br><i>Spécialité en Systèmes et Logiciels Embarqués (SLE)</i>",
+            "affiliation": "<b class=\"right\" align=right>Grenoble INP - Ensimag</b>"
+        },
+        {
+            "period": "2013 - 2015",
+            "english": "Preparatory classes for engineering schools belonging to the INP group</br><i>Major in Mathematics and Computer Sciences</i>",
+            "french": "Classe préparatoire intégrée, groupe INP</br><i>Spécialité en mathématiques et informatique</i>",
+            "affiliation": "<b class=\"right\" align=right>Grenoble INP - La Prépa</br>Site de Valence</b>"
+        },
+        {
+            "period": "2010 - 2013",
+            "english": "Baccalauréat in Sciences</br><i>Major in Mathematics, minor in Biology</i>",
+            "french": " Baccalauréat Scientifique</br><i>Option SVT, spécialité mathématiques</i>",
+            "affiliation": "<b class=\"right\" align=right>Lycée Geneviève de Gaulle</br>Anthonioz, Milhaud, Gard</b>"
+        }
+    ]
+}

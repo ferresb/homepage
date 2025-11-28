@@ -11,6 +11,8 @@ pattern     = re.compile('{{[^}]*}}')
 langPH      = "__LANGUAGE__"
 LINK_OUT    = "target=\"_blank\" rel=\"noopener noreferrer\""
 
+NOW = {"english": "now", "french": "maintenant"}
+
 MONTHS = { 1: {"english": "January", "french": "Janvier"},
            2: {"english": "February", "french": "Février"},
            3: {"english": "March", "french": "Mars"},
@@ -84,20 +86,22 @@ class PlaceHolder:
             for e in entries:
                 row = "<div class=\"row\">\n"
                 for c in columns:
-                    if c['align'] == 'center':
-                        entry = "<div class=\"col s{} center\">\n".format(c['size'])
-                    else:
-                        entry = "<div class=\"col s{}\">\n".format(c['size'])
+                    match c['align']:
+                        case 'center':
+                            entry = "<div class=\"col s{} center\">\n".format(c['size'])
+                        case _:
+                            entry = "<div class=\"col s{}\">\n".format(c['size'])
                     match c['style']:
                         case 'normal':
                             pass
                         case 'bold':
                             entry += "<b>"
-                        case _:
-                            raise "Unknown style {}".format(c['style'])
                     for key in c['content']:
                         key = self.lang if key == 'CONTENT' else key
-                        value = MONTHS[int(e[key])][self.lang] if (key == 'month') else e[key]
+                        if key == 'NOW':
+                            value = NOW[self.lang]
+                        else:
+                            value = MONTHS[int(e[key])][self.lang] if (key == 'month') else e[key]
                         entry += "{} ".format(value)
                     row += "{}".format(entry)
                     match c['style']:
