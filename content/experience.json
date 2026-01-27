@@ -32,13 +32,13 @@
     "entries":[
         {
             "period": "2023 - now",
-            "english": "<b>Associate Professor</b></br><u>Research:</u> Digital design and verification, security, compilation</br><u>Teaching:</u> Hardware architectures, low-level programming, hardware security", 
-            "french": "<b>Maître de Conférences</b></br><u>Recherche :</u> Conception numérique et vérification, sécurité, compilation</br><u>Enseignements :</u> Architectures matérielles, programmation embarquée, sécurité matérielle",
+            "english": "<b>Associate Professor</b></br><u>Research:</u> CPU architecture, verification, security, compilation</br><u>Teaching:</u> Hardware architectures, low-level programming, hardware security", 
+            "french": "<b>Maître de Conférences</b></br><u>Recherche :</u> Architecture des processeurs, vérification, sécurité, compilation</br><u>Enseignements :</u> Architectures matérielles, programmation embarquée, sécurité matérielle",
             "affiliation": "<b class=\"right\" align=right>Verimag/UGA, Grenoble</b>"
         },
         {
             "period": "2022 - 2023",
-            "english": "<b>Post doctoral researcher</b></br><u>Research:</u> Formal verification of electrical rules at transistor level</b><u>Teaching:</u> Programming (C, OCaml, python)", 
+            "english": "<b>Post doctoral researcher</b></br><u>Research:</u> Formal verification of electrical rules at transistor level</br><u>Teaching:</u> Programming (C, OCaml, python)", 
             "french": "<b>Chercheur post-doctorant</b></br><u>Recherche :</u> Vérification formelle de règles électriques au niveau transistor</br><u>Enseignements :</u> Programmation (C, OCaml, python)",
             "affiliation": "<b class=\"right\" align=right>LIP (ENS & INRIA), Lyon</br>Aniah, Grenoble</b>"
         },
