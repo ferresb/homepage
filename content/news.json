@@ -19,10 +19,28 @@
     },
     "entries":[
         {
+            "month": "12",
+            "year": "2026",
+            "english": "We're glad to welcome our new PhD candidate, Saed Dahani. He will be co-advised with Laure Gonnord (Verimag), François de Ferrière (STMicroelectronics) and Yves Janin (STMicroelectronics)",
+            "french": "Nous sommes heureux d'accueillir en thèse Saed Dahani, qui sera co-encadré avec Laure Gonnord (Verimag), François de Ferrière (STMicroelectronics) et Yves Janin (STMicroelectronics)"
+        },
+        {
+            "month": "11",
+            "year": "2026",
+            "english": "Following his successful apprenticeship at Verimag, we're glad to welcome Hichem Rebhi as a new PhD candidate, co-advised with Claire Maïza (Verimag) and Julie Dumas (TIMA)",
+            "french": "Suite à son apprentissage à Verimag, nous sommes heureux d'accueillir Hichem Rebhi comme nouveau doctorant, co-encadré avec Claire Maïza (Verimag) et Julie Dumas (TIMA)"
+        },
+        {
             "month": "11",
             "year": "2025",
             "english": "Congratulations to Oussama for succesfully defending his Ph.D. thesis !",
             "french": "Félicitations à Oussama pour avoir soutenu sa thèse avec brio !"
+        },
+        {
+            "month": "09",
+            "year": "2025",
+            "english": "I gladly joined Laure Gonnord in the supervising team of Clara Bourgeais, PhD candidate at LCIS (Valence)",
+            "french": "Je rejoins Laure Gonnord dans l'encadrement de la thèse de Clara Bourgeais, doctorante au LCIS (Valence)"
         },
         {
             "month": "09",
